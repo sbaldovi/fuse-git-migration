@@ -1,0 +1,136 @@
+# Debug options
+echo 1
+lint >fuse-emulator.lint
+list >fuse-emulator.list
+sizes >fuse-emulator.sizes
+stamp >fuse-emulator.stamps
+tags >fuse-emulator.tags
+tip >fuse-emulator.tips
+
+# Replace SourceForge ticket numbers in commit messages
+/#[0-9][0-9][0-9][0-9]+/c mailbox_out >fuse-emulator-tickets.box
+shell ./tickets_replace.sh fuse-emulator-tickets.box fuse-emulator-tickets-allura.box
+mailbox_in <fuse-emulator-tickets-allura.box
+
+# Standardise topic branches
+branch console-20080518 rename 2008-05-18-console
+branch ffmpeg-2010-08-07 rename 2010-08-07-ffmpeg
+branch fmfx-2010-09-14 rename 2010-09-14-fmfx
+branch ntsc-2009-04-11 rename 2009-04-11-ntsc
+branch opus-20090722 rename 2009-07-22-opus
+branch plusd_20070609 rename 2007-06-09-plusd
+branch wii-20080828 rename 2008-08-28-wii
+branch xvideo-2007-08-31 rename 2007-08-31-xvideo
+
+# Standardise release branches
+branch Release-0_4_1pre1-qtopia-branch rename Release-0_4_1-pre1-qtopia-branch
+branch Release-0_4_2pre3-tc2048-branch rename Release-0_4_2-pre3-tc2048-branch
+branch Release-0_5_1pre1-crypto-branch rename Release-0_5_1-pre1-crypto-branch
+branch Release-0_5_1pre2-debugger-branch rename Release-0_5_1-pre2-debugger-branch
+branch Release-0_5_2pre1-scaler-branch rename Release-0_5_2-pre1-scaler-branch
+branch Release_0_10_0-branch rename Release-0_10_0-branch
+branch libspectrum_0_1_0pre1-crypto-branch rename libspectrum_0_1_0-pre1-crypto-branch
+
+# Update commit messages referencing to renamed branches
+/fmfx-2010-09-14/c filter --replace /fmfx-2010-09-14/2010-09-14-fmfx/c
+/plusd_20070609/c filter --replace /plusd_20070609/2007-06-09-plusd/c
+/wii-20080828/c filter --replace /wii-20080828/2008-08-28-wii/c
+/xvideo-2007-08-31/c filter --replace /xvideo-2007-08-31/2007-08-31-xvideo/c
+/Release_0_10_0-branch/c filter --replace /Release_0_10_0-branch/Release-0_10_0-branch/c
+/libspectrum_0_1_0pre1-crypto-branch/c filter --replace /libspectrum_0_1_0pre1-crypto-branch/libspectrum_0_1_0-pre1-crypto-branch/c
+
+# Delete accidentally created branch /branches/Release_0_6_1-branch (r1601),
+# duplicate with /branches/Release-0_6_1-branch (r1600)
+branch Release_0_6_1-branch delete
+
+# Delete accidentally created branch /branches/Release-1_1_0 (r4987), later
+# moved to /tags/Release-1_1_0 (r4988)
+branch Release-1_1_0 delete
+tag tipdelete-Release-1_1_0 delete
+
+# Delete tag for accidentally created branch /branches/console (r3618), later
+# moved to /branches/console-20080518 (r3619)
+tag tipdelete-console delete
+
+# Delete tags of empty commits (r487,r1045,r3060,r3061,r3355,r3741)
+tag emptycommit-1045 delete
+tag emptycommit-3060 delete
+tag emptycommit-3061 delete
+tag emptycommit-3355 delete
+tag emptycommit-3741 delete
+tag emptycommit-487 delete
+
+# Delete tags of root branches
+tag 2011-02-16-spectranet-root delete
+tag 2011-02-18-memory-root delete
+tag 2011-05-04-memory-root delete
+tag console-20080518-root delete
+tag console-root delete
+tag ffmpeg-2010-08-07-root delete
+tag fmfx-2010-09-14-root delete
+tag ntsc-2009-04-11-root delete
+tag opus-20090722-root delete
+tag plusd_20070609-root delete
+tag wii-20080828-root delete
+tag xvideo-2007-08-31-root delete
+
+# Fix typos
+<178> filter --replace /initalised/initialised/c
+<179> filter --replace /initalised/initialised/c
+<182> filter --replace /preceeded/preceded/c
+<190> filter --replace /concatentation/concatenation/c
+<608> filter --replace /determing/determining/c
+<1024> filter --replace /calcuating/calculating/c
+<1234> filter --replace /occurences/occurrences/c
+<1491> filter --replace /accidently/accidentally/c
+<1546> filter --replace /digitial/digital/c
+<1782> filter --replace /Precalcuate/Precalculate/c
+<1791> filter --replace /occuring/occurring/c
+<1829> filter --replace /signficant/significant/c
+<1850> filter --replace /Aanother/Another/c
+<2327> filter --replace /dependancies/dependencies/c
+<3190> filter --replace /implict/implicit/c
+<3384> filter --replace /terminatation/termination/c
+<3499> filter --replace /Compilaton/Compilation/c
+<3557> filter --replace /accruate/accurate/c
+<3583> filter --replace /eak/weak/c
+<3706> filter --replace /unintialised/uninitialised/c
+<3739> filter --replace /confussion/confusion/c
+<3739> filter --replace /explictly/explicitly/c
+<3766> filter --replace /similiarly/similarly/c
+<3797> filter --replace /simmilar/similar/c
+<4033> filter --replace /Stuary/Stuart/c
+<4072> filter --replace /neccessary/necessary/c
+<4116> filter --replace /intertional/international/c
+<4147> filter --replace /regeisters/registers/c
+<4299> filter --replace /Wap/Wrap/c
+<4321> filter --replace /accomodate/accommodate/c
+<4399> filter --replace /complilation/compilation/c
+<4400> filter --replace /complilation/compilation/c
+<4438> filter --replace /accomodate/accommodate/c
+<4915> filter --replace /joytick/joystick/c
+<4915> filter --replace /accomodate/accommodate/c
+<5102> filter --replace /priveleges/privileges/c
+<5161> filter --replace /managment/management/c
+<5291> filter --replace /alloation/allocation/c
+
+# TODO: confirm `compatability' is indeed misspelled
+/compatability/c filter --replace /compatability/compatibility/c
+
+# Fix name
+(<4157>..<4531> & /Baldovi/c) filter --replace /Baldovi/Baldoví/c
+
+# Tag git conversion
+mailbox_in --create <<EOF
+Tag-Name: git-conversion
+
+    Marks the spot at which this repository was converted from Subversion to Git.
+EOF
+
+# Debug options
+## lint >fuse-emulator-end.lint
+## list >fuse-emulator-end.list
+## stamp >fuse-emulator-end.stamps
+## tags >fuse-emulator-end.tags
+## tip >fuse-emulator-end.tips
+## =O mailbox_out >fuse-emulator-end-orphaned.box
