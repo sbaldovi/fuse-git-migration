@@ -46,7 +46,7 @@ branch Release_0_6_1-branch delete
 # Delete accidentally created branch /branches/Release-1_1_0 (r4987), later
 # moved to /tags/Release-1_1_0 (r4988)
 branch Release-1_1_0 delete
-tag tipdelete-Release-1_1_0 delete
+# tag tipdelete-Release-1_1_0 delete
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
 # moved to /branches/console-20080518 (r3619)
@@ -75,46 +75,66 @@ tag wii-20080828-root delete
 tag xvideo-2007-08-31-root delete
 
 # Fix typos
-<178> filter --replace /initalised/initialised/c
-<179> filter --replace /initalised/initialised/c
+<142>,<3739> filter --replace /the the/the/c
+<178>,<179> filter --replace /initalised/initialised/c
 <182> filter --replace /preceeded/preceded/c
 <190> filter --replace /concatentation/concatenation/c
+<302> filter --replace /Chnage/Change/c
 <608> filter --replace /determing/determining/c
+<982> filter --replace /changable/changeable/c
 <1024> filter --replace /calcuating/calculating/c
 <1234> filter --replace /occurences/occurrences/c
+<1412> filter --replace /compability/compatibility/c
 <1491> filter --replace /accidently/accidentally/c
 <1546> filter --replace /digitial/digital/c
+<1770> filter --replace /retrigged/retriggered/c
 <1782> filter --replace /Precalcuate/Precalculate/c
 <1791> filter --replace /occuring/occurring/c
 <1829> filter --replace /signficant/significant/c
 <1850> filter --replace /Aanother/Another/c
+<2175>,<2176> filter --replace /interface/Interface/c
+<2192> filter --replace /timines/timings/c
 <2327> filter --replace /dependancies/dependencies/c
+<2433>,<2458>,<2749> filter --replace /microdrive/Microdrive/c
+<2467> filter --replace /disble/disable/c
+<2554> filter --replace /resonable/reasonable/c
+<2567> filter --replace /miminised/minimised/c
+<2712> filter --replace /colur/colour/c
+<2765> filter --replace /divide/DivIDE/c
+<2768> filter --replace /abberant/aberrant/c
+<2921> filter --replace /Fiix/Fix/c
+<3115> filter --replace /relaive/relative/c
 <3190> filter --replace /implict/implicit/c
+<3205> filter --replace /usused/unused/c
+<3239> filter --replace /Pentatgon/Pentagon/c
 <3384> filter --replace /terminatation/termination/c
 <3499> filter --replace /Compilaton/Compilation/c
 <3557> filter --replace /accruate/accurate/c
 <3583> filter --replace /eak/weak/c
+<3705> filter --replace /elimiate/eliminate/c
 <3706> filter --replace /unintialised/uninitialised/c
+<3707> filter --replace /Intialise/Initialise/c
 <3739> filter --replace /confussion/confusion/c
 <3739> filter --replace /explictly/explicitly/c
 <3766> filter --replace /similiarly/similarly/c
 <3797> filter --replace /simmilar/similar/c
+<3842> filter --replace /emlation/emulation/c
 <4033> filter --replace /Stuary/Stuart/c
 <4072> filter --replace /neccessary/necessary/c
 <4116> filter --replace /intertional/international/c
 <4147> filter --replace /regeisters/registers/c
+<4238> filter --replace /deleteing/deleting/c
 <4299> filter --replace /Wap/Wrap/c
-<4321> filter --replace /accomodate/accommodate/c
-<4399> filter --replace /complilation/compilation/c
-<4400> filter --replace /complilation/compilation/c
-<4438> filter --replace /accomodate/accommodate/c
+<4321>,<4438>,<4915> filter --replace /accomodate/accommodate/c
+<4321> filter --replace /Standarized/Standarised/c
+<4399>,<4400> filter --replace /complilation/compilation/c
+<4775> filter --replace /harcoded/hardcoded/c
 <4915> filter --replace /joytick/joystick/c
-<4915> filter --replace /accomodate/accommodate/c
+<4921> filter --replace /Specdrum/SpecDrum/c
+<5075> filter --replace /straings/strings/c
 <5102> filter --replace /priveleges/privileges/c
 <5161> filter --replace /managment/management/c
 <5291> filter --replace /alloation/allocation/c
-
-# TODO: confirm `compatability' is indeed misspelled
 /compatability/c filter --replace /compatability/compatibility/c
 
 # Fix name
