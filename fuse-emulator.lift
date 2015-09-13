@@ -7,6 +7,16 @@ stamp >fuse-emulator.stamps
 tags >fuse-emulator.tags
 tip >fuse-emulator.tips
 
+# Delete futile cvs2svn commit
+<1> squash
+
+# Coalesce 'last minute' errors into their parents, mostly fixing typos in
+# ChangeLog, iif have the same author and don't add a new entry in ChangeLog.
+<4872> filter --replace /[#273]/[#276]/c
+<4873> squash --pushback
+<4910> filter --replace /#290)(thanks, Guesser)/#290) (thanks, Guesser)/c
+<4911> squash --pushback
+
 # Branch plusd_20070609 ends development in r3006, committed to trunk by r3007
 # and r3008. There is no mergeinfo. Squash r3007 and r3008, merge at r3007.
 <3008> squash --pushback
