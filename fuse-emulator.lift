@@ -7,6 +7,11 @@ stamp >fuse-emulator.stamps
 tags >fuse-emulator.tags
 tip >fuse-emulator.tips
 
+# Branch plusd_20070609 ends development in r3006, committed to trunk by r3007
+# and r3008. There is no mergeinfo. Squash r3007 and r3008, merge at r3007.
+<3008> squash --pushback
+<3006>,<3007> merge
+
 # Replace SourceForge ticket numbers in commit messages
 /#[0-9][0-9][0-9][0-9]+/c mailbox_out >fuse-emulator-tickets.box
 shell ./tickets_replace.sh fuse-emulator-tickets.box fuse-emulator-tickets-allura.box
