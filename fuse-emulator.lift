@@ -7,6 +7,16 @@ stamp >fuse-emulator.stamps
 tags >fuse-emulator.tags
 tip >fuse-emulator.tips
 
+# Macro for SVG graph generation
+define graph_commits {
+  graph >{0}.dot
+  shell dot <{0}.dot -Tsvg >{0}.svg
+  shell rm {0}.dot
+}
+
+# Graph sensible commits before modifications
+<2955>..<3009> do graph_commits branch_plusd_20070609_original
+
 # Delete futile cvs2svn commit
 <1> squash
 
@@ -166,6 +176,9 @@ EOF
 # git tag -a conversion-to-svn \
 #     $(git log --grep '^Legacy-ID: 2858$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2) \
 #     -m 'Marks the spot at which this repository was converted from CVS to Subversion.'
+
+# Graph sensible commits after modifications
+<2955>..<3009> do graph_commits branch_plusd_20070609_lifted
 
 # Debug options
 ## lint >fuse-emulator-end.lint
