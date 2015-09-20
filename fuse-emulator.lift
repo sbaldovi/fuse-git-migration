@@ -106,12 +106,15 @@ tag xvideo-2007-08-31-root delete
 <190> filter --replace /concatentation/concatenation/c
 <302> filter --replace /Chnage/Change/c
 <608> filter --replace /determing/determining/c
+<945> filter --replace /juse/just/c
 <982> filter --replace /changable/changeable/c
 <1024> filter --replace /calcuating/calculating/c
+<1135> filter --replace /syntatic/syntactic/c
 <1234> filter --replace /occurences/occurrences/c
 <1412> filter --replace /compability/compatibility/c
 <1491> filter --replace /accidently/accidentally/c
 <1546> filter --replace /digitial/digital/c
+<1698>,<2138> filter --replace /Iif/If/c
 <1770> filter --replace /retrigged/retriggered/c
 <1782> filter --replace /Precalcuate/Precalculate/c
 <1791> filter --replace /occuring/occurring/c
@@ -128,6 +131,7 @@ tag xvideo-2007-08-31-root delete
 <2765> filter --replace /divide/DivIDE/c
 <2768> filter --replace /abberant/aberrant/c
 <2921> filter --replace /Fiix/Fix/c
+<3113> filter --replace /iFix/Fix/c
 <3115> filter --replace /relaive/relative/c
 <3190> filter --replace /implict/implicit/c
 <3205> filter --replace /usused/unused/c
@@ -153,7 +157,8 @@ tag xvideo-2007-08-31-root delete
 <4321>,<4438>,<4915> filter --replace /accomodate/accommodate/c
 <4321> filter --replace /Standarized/Standarised/c
 <4399>,<4400> filter --replace /complilation/compilation/c
-<4775> filter --replace /harcoded/hardcoded/c
+<4457> filter --replace /plement/Implement/c
+<4774>,<4775>,<4776>,<4777> filter --replace /harcoded/hardcoded/c
 <4915> filter --replace /joytick/joystick/c
 <4921> filter --replace /Specdrum/SpecDrum/c
 <5075> filter --replace /straings/strings/c
