@@ -140,6 +140,7 @@ tag xvideo-2007-08-31-root delete
 <3499> filter --replace /Compilaton/Compilation/c
 <3557> filter --replace /accruate/accurate/c
 <3583> filter --replace /eak/weak/c
+<3640> filter --replace /keybaord/keyboard/c
 <3705> filter --replace /elimiate/eliminate/c
 <3706> filter --replace /unintialised/uninitialised/c
 <3707> filter --replace /Intialise/Initialise/c
@@ -167,7 +168,9 @@ tag xvideo-2007-08-31-root delete
 <5291> filter --replace /alloation/allocation/c
 /compatability/c filter --replace /compatability/compatibility/c
 
-# Fix name
+# Fix names
+<2588> filter --replace /Markus Obermuller/Markus Oberhumer/c
+<3887> filter --replace /Lucuan Langa/Lucian Langa/c
 (<4157>..<4531> & /Baldovi/c) filter --replace /Baldovi/Baldoví/c
 
 # Tag git conversion
