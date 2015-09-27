@@ -17,6 +17,29 @@ define graph_commits {
 # Graph sensible commits before modifications
 <2955>..<3009> do graph_commits branch_plusd_20070609_original
 
+print * Thanks
+
+# Standardise "thanks" acknowledge
+<2397> filter --replace /(thanks Paul van der Laan)/(thanks, Paul van der Laan)/c
+<2553>,<2659>,<2797>,<3271>,<3905>,<3906>,<3941>,<4093>,<4100>,<4123>,<4178>,<4323>,<4330> filter --replace /; thanks/) (thanks/c
+<2615> filter --replace /1526688;/1526688)/c
+<2615> filter --replace /thanks Phil!)/(thanks Phil!)/c
+<2630> filter --replace /(thanks Mark Woodmass/(thanks, Mark Woodmass/c
+<2799> filter --replace /1708636;/1708636)/c
+<2799> filter --replace /thanks Alberto Garcia)/(thanks, Alberto Garcia)/c
+<2803> filter --replace /(thanks Stuart Brady and Arda Erdikmen)/(thanks, Stuart Brady and Arda Erdikmen)/c
+<3189> filter --replace /(Thanks/(thanks/c
+<3284> filter --replace /1828945;/1828945)/c
+<3284> filter --replace /thanks, Stuart Brady)/(thanks, Stuart Brady)/c
+<3802> filter --replace /Gergely Szasz;/Gergely Szasz)/c
+<3802> filter --replace /thanks, Mark Woodmass)/(thanks, Mark Woodmass)/c
+<3891> filter --replace /("thanks", rkd77)/(thanks, rkd77)/c
+<4163> filter --replace /3078262;/3078262)/c
+<4163> filter --replace /thanks, Nick Corey)/(thanks, Nick Corey)/c
+<4324> filter --replace /3248008;/3248008)/c
+<4324> filter --replace /thanks, Cygnus)/(thanks, Cygnus)/c
+<4392> filter --replace /(thanks Sergio)/(thanks, Sergio)/c
+
 print * Ticket numbers
 
 # Fix wrong bug <-> patch identifications
