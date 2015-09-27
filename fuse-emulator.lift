@@ -17,12 +17,33 @@ define graph_commits {
 # Graph sensible commits before modifications
 <2955>..<3009> do graph_commits branch_plusd_20070609_original
 
+print * Ticket numbers
+
+# Fix wrong bug <-> patch identifications
+<4340> filter --replace /(patch/(bug/c
+<4872> filter --replace /[#273]/[#276]/c
+
+# Standardise format for ticket numbers
+<3041> filter --replace /1746073/#1746073/c
+<3143> filter --replace /(fixes/(fixes bug/c
+<3858> filter --replace /2312217/#2312217/c
+<4020> filter --replace /#2790063 /#2790063) (/c
+<4465> filter --replace /3312600/#3312600/c
+<4724> filter --replace /#3525261 /#3525261) (/c
+<4772> filter --replace /3488036/#3488036/c
+<4854>,<4856>,<4857>,<4858>,<4859>,<4860>,<4861>,<4864>,<4872>,<4915> filter --replace /[//g
+<4854>,<4856>,<4857>,<4858>,<4859>,<4860>,<4861>,<4864>,<4872>,<4915> filter --replace /]//g
+
+# Update SourceForge ticket numbers in commit messages
+/#[0-9][0-9][0-9][0-9]+/c mailbox_out >tickets_initial.box
+shell ./tickets_replace.sh tickets_initial.box tickets_lifted.box
+mailbox_in <tickets_lifted.box
+
 # Delete futile cvs2svn commit
 <1> squash
 
 # Coalesce 'last minute' errors into their parents, mostly fixing typos in
 # ChangeLog, iif have the same author and don't add a new entry in ChangeLog.
-<4872> filter --replace /[#273]/[#276]/c
 <4873> squash --pushback
 <4910> filter --replace /#290)(thanks, Guesser)/#290) (thanks, Guesser)/c
 <4911> squash --pushback
@@ -31,11 +52,6 @@ define graph_commits {
 # and r3008. There is no mergeinfo. Squash r3007 and r3008, merge at r3007.
 <3008> squash --pushback
 <3006>,<3007> merge
-
-# Replace SourceForge ticket numbers in commit messages
-/#[0-9][0-9][0-9][0-9]+/c mailbox_out >fuse-emulator-tickets.box
-shell ./tickets_replace.sh fuse-emulator-tickets.box fuse-emulator-tickets-allura.box
-mailbox_in <fuse-emulator-tickets-allura.box
 
 print * Branches
 

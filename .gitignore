@@ -9,6 +9,6 @@ fuse-emulator.stamps
 fuse-emulator.svn
 fuse-emulator.tags
 fuse-emulator.tips
-fuse-emulator-tickets.box
-fuse-emulator-tickets-allura.box
+tickets_initial.box
+tickets_lifted.box
 *.svg
