@@ -1,0 +1,158 @@
+## Debug options
+# echo 1
+
+
+# Manual attributions of co-author contributions
+# ==============================================
+print * Manual author attributions
+
+# (Fred/ScummVM team)
+/\(Fred.ScummVM\steam\)/c filter --regex /.*/Fredrick Meunier <fredm@spamcop.net>/a
+
+# r348 - Alexander Yurchenko's patch for OpenBSD (and Solaris?) sound.
+/Alexander Yurchenko's patch/c filter --regex /.*/Alexander Yurchenko <no-address@no-domain.com>/a
+
+# r1213 - Support for Warajevo's .DCK files (Darren/Fred).
+/Support for Warajevo's .DCK files/c filter --regex /.*/Darren Salt <no-address@no-domain.com>/a
+
+# r1215 - TC2068 dock support (Darren/Fred).
+/TC2068 dock support/c filter --regex /.*/Darren Salt <no-address@no-domain.com>/a
+
+# r1688 - Real joystick support (Darren/Fred)
+/Real joystick support/c filter --regex /.*/Darren Salt <no-address@no-domain.com>/a
+
+# r4340 - Fix compilation warnings (bug #215) (Sergio Baldovi and Gergely Szasz).
+/\(bug \#215\)/c filter --regex /.*/Gergely Szasz <no-address@no-domain.com>/a
+
+# r4664 - Merge recording of movies to fmf files from the fmfx-2010-09-14 branch
+# (patch #3034770) (Gergely Szasz with contributions from Sergio Baldoví and Fred).
+/Merge recording of movies to fmf/c filter --regex /.*/Gergely Szasz <no-address@no-domain.com>/a
+
+# r5030 - Look port 1FFDh if paging is disabled (fixes bug #265) (Brian Ruthven and Fred).
+/\(fixes bug \#265\)/c filter --regex /.*/Brian Ruthven <no-address@no-domain.com>/a
+
+# r5088 - Add libav10 support (thanks, Alberto Garcia) (Anton Khirnov and Sergio).
+/\(Anton Khirnov and Sergio\)/c filter --regex /.*/Anton Khirnov <no-address@no-domain.com>/a
+
+# r5106 - Select glibtoolize where required (Sergio via fuse).
+/\(Sergio via fuse\)/c filter --regex /.*/Sergio Baldoví <serbalgi@gmail.com>/a
+
+
+# Generic attributions
+# ====================
+print * Generic author attributions
+
+# Macro for removing the author attribution in the commit message
+# when author = committer
+# {0}: string between brackets
+# {1}: committer name
+define cleanup_comitter {
+  # Filter commits with committer/author in bracketed name  
+  (/\({0}\)/c & /{1}/a) assign Committer
+
+  # Export original messages
+  <Committer> mailbox_out >committers/committer_{1}_initial.box
+
+  # Remove committer name between brackets from commit message
+  <Committer> filter --regex /\s\({0}\)//c
+
+  # Export lifted messages
+  <Committer> mailbox_out >committers/committer_{1}_lifted.box
+
+  unassign Committer
+}
+
+# Clean-up commit messages from current committers/authors.
+do cleanup_comitter "Fred"   "Fredrick"
+do cleanup_comitter "Marek"  "Marek"
+do cleanup_comitter "Sergio" "Sergio"
+do cleanup_comitter "Stuart" "Stuart"
+do cleanup_comitter "Philip\sKendall" "Philip"
+
+# Macro for assigning different author
+# {0}: string between brackets
+# {1}: log name
+# {2}: full name
+# {3}: mail address
+define assign_author {
+  # Filter commits with bracketed name and different author 
+  (/\({0}\)/c & ~/{2}/a) assign Author
+
+  # Export original messages
+  <Author> mailbox_out >authors/author_{1}_initial.box
+
+  # Replace author
+  <Author> filter --regex /.*/{2} <{3}>/a
+
+  # Remove author name between brackets from commit message
+  <Author> filter --regex /\s\({0}\)//g
+
+  # Export lifted messages
+  <Author> mailbox_out >authors/author_{1}_lifted.box
+
+  # Export leftovers (string between brackets, not thanked, not author yet)
+  ( /\([^\(\)]*{0}[^\(\)]*\)/c & ( ~/\([^\(\)]*[Tt]hanks[^\(\)]*{0}[^\(\)]*\)/c ) & ( ~/{2}/a ) ) \
+    mailbox_out >authors/author_{1}_leftover.box
+
+  unassign Author
+}
+
+# Amend early contributions of committers
+do assign_author "Fred"               "Fred"             "Fredrick Meunier" "fredm@spamcop.net"
+do assign_author "Marek\sJanuszewski" "MarekJanuszewski" "Marek Januszewski" "spec@webtech.pl"
+do assign_author "Marek"              "Marek"            "Marek Januszewski" "spec@webtech.pl"
+do assign_author "Sergio\sBaldoví"    "SergioBaldoví"    "Sergio Baldoví" "serbalgi@gmail.com"
+do assign_author "Sergio"             "Sergio"           "Sergio Baldoví" "serbalgi@gmail.com"
+do assign_author "Stuart\sBrady"      "StuartBrady"      "Stuart Brady" "sdb-fuse@zubnet.me.uk"
+do assign_author "Stuart"             "Stuart"           "Stuart Brady" "serbalgi@gmail.com"
+
+# Amend rest of contributions
+# TODO: confirm names and mail addresses.
+do assign_author "Alberto\sGarcia"    "AlbertoGarcia"   "Alberto Garcia" "no-address@no-domain.com"
+do assign_author "Alberto"            "Alberto"         "Alberto Garcia" "no-address@no-domain.com"
+do assign_author "Andrew\sOwen"       "AndrewOwen"      "Andrew Owen" "no-address@no-domain.com"
+do assign_author "Adrien\sDestugues"  "AdrienDestugues" "Adrien Destugues" "no-address@no-domain.com"
+do assign_author "Alex\sBadea"        "AlexBadea"       "Alex Badea" "no-address@no-domain.com"
+do assign_author "Arda\sErdikmen"     "ArdaErdikmen"    "Arda Erdikmen" "no-address@no-domain.com"
+do assign_author "Boris\sDonko"       "BorisDonko"      "Boris Donko" "no-address@no-domain.com"
+do assign_author "Catalin\sMihaila"   "CatalinMihaila"  "Catalin Mihaila" "no-address@no-domain.com"
+do assign_author "Chris\sYoung"       "ChrisYoung"      "Chris Young" "no-address@no-domain.com"
+do assign_author "from\sDarren\sSalt" "fromDarrenSalt"  "Darren Salt" "no-address@no-domain.com"
+do assign_author "Darren"             "Darren"          "Darren Salt" "no-address@no-domain.com"
+do assign_author "Dmitry\sSemyonov"   "DmitrySemyonov"  "Dmitry Semyonov" "no-address@no-domain.com"
+do assign_author "Garry\sLancaster"   "GarryLancaster"  "Garry Lancaster" "no-address@no-domain.com"
+do assign_author "Gergely\sSzasz"     "GergelySzasz"    "Gergely Szasz" "no-address@no-domain.com"
+do assign_author "Gergely"            "Gergely"         "Gergely Szasz" "no-address@no-domain.com"
+do assign_author "Guesser"            "Guesser"         "Guesser" "no-address@no-domain.com"
+do assign_author "György\sSzombathelyi" "Szombathelyi"  "György Szombathelyi" "no-address@no-domain.com"
+do assign_author "Jiri\sBenc"         "JiriBenc"        "Jiri Benc" "no-address@no-domain.com"
+do assign_author "Jon\sMitchell"      "JonMitchell"     "Jon Mitchell" "no-address@no-domain.com"
+do assign_author "Ooblick"            "JonMitchell"     "Jon Mitchell" "no-address@no-domain.com"
+do assign_author "José\sManuel\sFerrer\sOrtiz" "JoséManuel" "José Manuel Ferrer Ortiz" "no-address@no-domain.com"
+do assign_author "ketmar"             "ketmar"          "ketmar" "no-address@no-domain.com"
+do assign_author "Mark\sWoodmass"     "MarkWoodmass"    "Mark Woodmass" "no-address@no-domain.com"
+do assign_author "Markus\sOberhumer"  "MarkusOberhumer" "Markus F.X.J. Oberhumer" "no-address@no-domain.com"
+do assign_author "Matthew\sWestcott"  "MatthewWestcott" "Matthew Westcott" "no-address@no-domain.com"
+do assign_author "Michal\sJurica"     "MichalJurica"    "Michal Jurica" "no-address@no-domain.com"
+do assign_author "Patrik\sPersson"    "PatrikPersson"   "Patrik Persson" "no-address@no-domain.com"
+do assign_author "Patrik\sRak"        "PatrikRak"       "Patrik Rak" "no-address@no-domain.com"
+do assign_author "Q-Master"           "Q-Master"        "Q-Master" "no-address@no-domain.com"
+do assign_author "Rene\sLadan"        "ReneLadan"       "Rene Ladan" "no-address@no-domain.com"
+do assign_author "rkd77"              "rkd77"           "rkd77" "no-address@no-domain.com"
+do assign_author "from\sRussell\sMarks" "fromRussellMarks" "Russell Marks" "no-address@no-domain.com"
+do assign_author "from\sRussell"      "fromRussell"     "Russell Marks" "no-address@no-domain.com"
+do assign_author "Russell\sMarks"     "RussellMarks"    "Russell Marks" "no-address@no-domain.com"
+do assign_author "Russell"            "Russell"         "Russell Marks" "no-address@no-domain.com"
+do assign_author "Santiago\sVila"     "SantiagoVila"    "Santiago Vila" "no-address@no-domain.com"
+do assign_author "Simon\sOwen"        "SimonOwn"        "Simon Owen" "no-address@no-domain.com"
+do assign_author "Stefano\sBodrato"   "StefanoBodrato"  "Stefano Bodrato" "no-address@no-domain.com"
+do assign_author "sweetlilmr"         "sweetlilmr"      "sweetlilmr" "no-address@no-domain.com"
+do assign_author "Tom\sSeddon"        "TomSeddon"       "Tom Seddon" "no-address@no-domain.com"
+do assign_author "UB880D"             "UB880D"          "UB880D" "no-address@no-domain.com"
+do assign_author "Witold"             "Witold"          "Witold Filipczyk" "no-address@no-domain.com"
+
+
+## Debug options
+# /\([^\(\)]+\)/c mailbox_out >brackets.box
+# shell grep -o -E "\([^\(\)]+\)" brackets.box | sort -u > brackets.txt
+# shell rm brackets.box
