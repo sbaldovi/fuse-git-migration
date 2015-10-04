@@ -145,20 +145,27 @@ tag xvideo-2007-08-31-root delete
 print * Typos
 
 # Fix typos
+# git log --all --pretty='%B' | grep -o -E '\w+' | sort | uniq | \
+#     aspell list --ignore-case | sort | uniq
 <142>,<3739> filter --replace /the the/the/c
 <178>,<179> filter --replace /initalised/initialised/c
 <182> filter --replace /preceeded/preceded/c
 <190> filter --replace /concatentation/concatenation/c
 <302> filter --replace /Chnage/Change/c
+<441> filter --replace /Syntatic/Syntactic/c
 <608> filter --replace /determing/determining/c
+<725> filter --replace /signatues/signatures/c
 <945> filter --replace /juse/just/c
 <982> filter --replace /changable/changeable/c
 <1024> filter --replace /calcuating/calculating/c
+<1078> filter --replace /occured/occurred/c
 <1135> filter --replace /syntatic/syntactic/c
 <1234> filter --replace /occurences/occurrences/c
 <1287>,<3761> filter --replace /). (/) (/c
 <1412> filter --replace /compability/compatibility/c
 <1491> filter --replace /accidently/accidentally/c
+<1517> filter --replace /competetion/competition/c
+<1534> filter --replace /paramaters/parameters/c
 <1546> filter --replace /digitial/digital/c
 <1698>,<2138> filter --replace /Iif/If/c
 <1713> filter --replace /Wwe/We/c
@@ -179,9 +186,13 @@ print * Typos
 <2567> filter --replace /miminised/minimised/c
 <2712> filter --replace /colur/colour/c
 <2765> filter --replace /divide/DivIDE/c
+<2775> filter --replace /Uupdates/Updates/c
 <2768> filter --replace /abberant/aberrant/c
+<2824> filter --replace /MMerge/Merge/c
 <2921> filter --replace /Fiix/Fix/c
 <2992>,<4683> filter --replace /.--/--/c
+<2994> filter --replace /coreaudio/CoreAudio/c
+<3001>,<5105> filter --replace /Changelog/ChangeLog/c
 <3113> filter --replace /iFix/Fix/c
 <3115> filter --replace /relaive/relative/c
 <3190> filter --replace /implict/implicit/c
@@ -191,6 +202,7 @@ print * Typos
 <3499> filter --replace /Compilaton/Compilation/c
 <3526> filter --replace /part ofpatch/part of patch/c
 <3557> filter --replace /accruate/accurate/c
+<3578> filter --replace /unneccesary/unnecessary/c
 <3583> filter --replace /eak/weak/c
 <3640> filter --replace /keybaord/keyboard/c
 <3705> filter --replace /elimiate/eliminate/c
@@ -215,9 +227,10 @@ print * Typos
 <4299> filter --replace /Wap/Wrap/c
 <4320> filter --replace /.././c
 <4321>,<4438>,<4915> filter --replace /accomodate/accommodate/c
-<4321> filter --replace /Standarized/Standarised/c
+<4321> filter --replace /Standarized/Standardised/c
 <4399>,<4400> filter --replace /complilation/compilation/c
 <4457> filter --replace /plement/Implement/c
+<4485> filter --replace /Esure/Ensure/c
 <4683> filter --replace /.--/--/c
 <4774>,<4775>,<4776>,<4777> filter --replace /harcoded/hardcoded/c
 <4915> filter --replace /joytick/joystick/c
@@ -230,6 +243,7 @@ print * Typos
 /compatability/c filter --replace /compatability/compatibility/c
 
 # Fix names
+<553> filter --replace /John Eliott/John Elliott/c
 <2588> filter --replace /Markus Obermuller/Markus Oberhumer/c
 <3887> filter --replace /Lucuan Langa/Lucian Langa/c
 (<4157>..<4531> & /Baldovi/c) filter --replace /Baldovi/Baldoví/c
