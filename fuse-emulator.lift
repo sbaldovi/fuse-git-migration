@@ -147,12 +147,14 @@ print * Typos
 # Fix typos
 # git log --all --pretty='%B' | grep -o -E '\w+' | sort | uniq | \
 #     aspell list --ignore-case | sort | uniq
+<109> filter --replace /with with/with/c
 <142>,<3739> filter --replace /the the/the/c
 <178>,<179> filter --replace /initalised/initialised/c
 <182> filter --replace /preceeded/preceded/c
 <190> filter --replace /concatentation/concatenation/c
 <302> filter --replace /Chnage/Change/c
 <441> filter --replace /Syntatic/Syntactic/c
+<536>,<563> filter --replace /comparision/comparison/c
 <608> filter --replace /determing/determining/c
 <725> filter --replace /signatues/signatures/c
 <945> filter --replace /juse/just/c
@@ -218,6 +220,7 @@ print * Typos
 <3797> filter --replace /simmilar/similar/c
 <3842> filter --replace /emlation/emulation/c
 <3855> filter --replace /WorldCupSoccerItalia90/Coin-Op Hits/c
+<4012> filter --replace /both both/both/c
 <4033> filter --replace /Stuary/Stuart/c
 <4072> filter --replace /neccessary/necessary/c
 <4116> filter --replace /intertional/international/c
@@ -229,12 +232,14 @@ print * Typos
 <4321>,<4438>,<4915> filter --replace /accomodate/accommodate/c
 <4321> filter --replace /Standarized/Standardised/c
 <4399>,<4400> filter --replace /complilation/compilation/c
+<4426> filter --replace /working working/working/c
 <4457> filter --replace /plement/Implement/c
 <4485> filter --replace /Esure/Ensure/c
 <4683> filter --replace /.--/--/c
 <4774>,<4775>,<4776>,<4777> filter --replace /harcoded/hardcoded/c
 <4915> filter --replace /joytick/joystick/c
 <4921> filter --replace /Specdrum/SpecDrum/c
+<4966> filter --replace /all all/all/c
 <4996> filter --replace /Mention PZX  support/Mention PZX support/c
 <5075> filter --replace /straings/strings/c
 <5102> filter --replace /priveleges/privileges/c
