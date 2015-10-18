@@ -67,6 +67,7 @@ mailbox_in <tickets_lifted.box
 
 # Coalesce 'last minute' errors into their parents, mostly fixing typos in
 # ChangeLog, iif have the same author and don't add a new entry in ChangeLog.
+<4317> squash --pushback
 <4873> squash --pushback
 <4910> filter --replace /#290)(thanks, Guesser)/#290) (thanks, Guesser)/c
 <4911> squash --pushback
