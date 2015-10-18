@@ -104,7 +104,7 @@ do assign_author "Marek"              "Marek"            "Marek Januszewski" "sp
 do assign_author "Sergio\sBaldoví"    "SergioBaldoví"    "Sergio Baldoví" "serbalgi@gmail.com"
 do assign_author "Sergio"             "Sergio"           "Sergio Baldoví" "serbalgi@gmail.com"
 do assign_author "Stuart\sBrady"      "StuartBrady"      "Stuart Brady" "sdb-fuse@zubnet.me.uk"
-do assign_author "Stuart"             "Stuart"           "Stuart Brady" "serbalgi@gmail.com"
+do assign_author "Stuart"             "Stuart"           "Stuart Brady" "sdb-fuse@zubnet.me.uk"
 
 # Amend rest of contributions
 # TODO: confirm names and mail addresses.
