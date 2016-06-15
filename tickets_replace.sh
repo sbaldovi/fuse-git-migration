@@ -9,8 +9,11 @@ fi
 
 touch $2
 
+rm tickets_map.sed
+touch tickets_map.sed
+
 while read -r artifact ticket; do
-    sed_opts+="s/$artifact/$ticket/g;"
+    echo "s/$artifact/$ticket/g" >> tickets_map.sed
 done < tickets_map.txt
 
-sed -e "$sed_opts" < $1 > $2
+sed -f tickets_map.sed < $1 > $2
