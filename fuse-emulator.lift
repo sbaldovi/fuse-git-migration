@@ -21,7 +21,7 @@ print * Thanks
 
 # Standardise "thanks" acknowledge
 <2397> filter --replace /(thanks Paul van der Laan)/(thanks, Paul van der Laan)/c
-<2553>,<2659>,<2797>,<3271>,<3905>,<3906>,<3941>,<4093>,<4100>,<4123>,<4178>,<4323>,<4330> filter --replace /; thanks/) (thanks/c
+<2553>,<2659>,<2797>,<3271>,<3905>,<3906>,<3941>,<4093>,<4100>,<4123>,<4178>,<4323>,<4330>,<5325> filter --replace /; thanks/) (thanks/c
 <2615> filter --replace /1526688;/1526688)/c
 <2615> filter --replace /thanks Phil!)/(thanks Phil!)/c
 <2630> filter --replace /(thanks Mark Woodmass/(thanks, Mark Woodmass/c
@@ -45,6 +45,9 @@ print * Ticket numbers
 # Fix wrong bug <-> patch identifications
 <4340> filter --replace /(patch/(bug/c
 <4872> filter --replace /[#273]/[#276]/c
+<5259>,<5419> filter --replace /(fixes bug/(patch/c
+<5420> filter --replace /(fixes/(patch/c
+<5420> filter --replace /bug //c
 
 # Standardise format for ticket numbers
 <3041> filter --replace /1746073/#1746073/c
@@ -56,6 +59,9 @@ print * Ticket numbers
 <4772> filter --replace /3488036/#3488036/c
 <4854>,<4856>,<4857>,<4858>,<4859>,<4860>,<4861>,<4864>,<4872>,<4915> filter --replace /[//g
 <4854>,<4856>,<4857>,<4858>,<4859>,<4860>,<4861>,<4864>,<4872>,<4915> filter --replace /]//g
+<5397> filter --replace /[features:#83]/(feature request #83)/c
+<5477> filter --replace /[patches:#365]/(patch #365)/c
+<5556> filter --replace /[bugs:316]/[bugs:#316]/c
 
 # Update SourceForge ticket numbers in commit messages
 /#[0-9][0-9][0-9][0-9]+/c mailbox_out >tickets_initial.box
@@ -246,6 +252,9 @@ print * Typos
 <5102> filter --replace /priveleges/privileges/c
 <5161> filter --replace /managment/management/c
 <5291> filter --replace /alloation/allocation/c
+<5368> filter --replace /inital/initial/c
+<5415>,<5416> filter --replace /timming/timing/c
+<5531> filter --replace /espaces/spaces/c
 /compatability/c filter --replace /compatability/compatibility/c
 
 # Fix names
