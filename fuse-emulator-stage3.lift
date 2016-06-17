@@ -32,7 +32,7 @@ print * Manual author attributions
 /\(fixes bug \#265\)/c filter --regex /.*/Brian Ruthven <no-address@no-domain.com>/a
 
 # r5088 - Add libav10 support (thanks, Alberto Garcia) (Anton Khirnov and Sergio).
-/\(Anton Khirnov and Sergio\)/c filter --regex /.*/Anton Khirnov <no-address@no-domain.com>/a
+/\(Anton Khirnov and Sergio\)/c filter --regex /.*/Anton Khirnov <anton@khirnov.net>/a
 
 # r5106 - Select glibtoolize where required (Sergio via fuse).
 /\(Sergio via fuse\)/c filter --regex /.*/Sergio Baldoví <serbalgi@gmail.com>/a
@@ -108,34 +108,36 @@ do assign_author "Stuart"             "Stuart"           "Stuart Brady" "sdb-fus
 
 # Amend rest of contributions
 # TODO: confirm names and mail addresses.
-do assign_author "Alberto\sGarcia"    "AlbertoGarcia"   "Alberto Garcia" "no-address@no-domain.com"
-do assign_author "Alberto"            "Alberto"         "Alberto Garcia" "no-address@no-domain.com"
-do assign_author "Andrew\sOwen"       "AndrewOwen"      "Andrew Owen" "no-address@no-domain.com"
-do assign_author "Adrien\sDestugues"  "AdrienDestugues" "Adrien Destugues" "no-address@no-domain.com"
-do assign_author "Alex\sBadea"        "AlexBadea"       "Alex Badea" "no-address@no-domain.com"
-do assign_author "Arda\sErdikmen"     "ArdaErdikmen"    "Arda Erdikmen" "no-address@no-domain.com"
+do assign_author "Adam\sSampson"      "AdamSampson"     "Adam Sampson" "ats@offog.org"
+do assign_author "Alberto\sGarcia"    "AlbertoGarcia"   "Alberto Garcia" "berto@igalia.com"
+do assign_author "Alberto"            "Alberto"         "Alberto Garcia" "berto@igalia.com"
+do assign_author "Andre\sLeiradella"  "AndreLeiradella" "Andre Leiradella" "andre@leiradella.com"
+do assign_author "Andrew\sOwen"       "AndrewOwen"      "Andrew Owen" "aowen10@mail.bbk.ac.uk"
+do assign_author "Adrien\sDestugues"  "AdrienDestugues" "Adrien Destugues" "pulkomandy@pulkomandy.tk"
+do assign_author "Alex\sBadea"        "AlexBadea"       "Alex Badea" "vamposdecampos@gmail.com"
+do assign_author "Arda\sErdikmen"     "ArdaErdikmen"    "Arda Erdikmen" "ardarda@gmail.com"
+do assign_author "BogDan\sVatra"      "BogDanVatra"     "BogDan Vatra" "bogdan@kde.org"
 do assign_author "Boris\sDonko"       "BorisDonko"      "Boris Donko" "no-address@no-domain.com"
-do assign_author "BogDan\sVatra"      "BogDanVatra"     "BogDan Vatra" "no-address@no-domain.com"
 do assign_author "Catalin\sMihaila"   "CatalinMihaila"  "Catalin Mihaila" "no-address@no-domain.com"
-do assign_author "Chris\sYoung"       "ChrisYoung"      "Chris Young" "no-address@no-domain.com"
+do assign_author "Chris\sYoung"       "ChrisYoung"      "Chris Young" "chris@unsatisfactorysoftware.co.uk"
 do assign_author "from\sDarren\sSalt" "fromDarrenSalt"  "Darren Salt" "no-address@no-domain.com"
 do assign_author "Darren"             "Darren"          "Darren Salt" "no-address@no-domain.com"
 do assign_author "Dmitry\sSemyonov"   "DmitrySemyonov"  "Dmitry Semyonov" "no-address@no-domain.com"
-do assign_author "Garry\sLancaster"   "GarryLancaster"  "Garry Lancaster" "no-address@no-domain.com"
+do assign_author "Garry\sLancaster"   "GarryLancaster"  "Garry Lancaster" "garry@garrylancaster.me.uk"
 do assign_author "Gergely\sSzasz"     "GergelySzasz"    "Gergely Szasz" "no-address@no-domain.com"
 do assign_author "Gergely"            "Gergely"         "Gergely Szasz" "no-address@no-domain.com"
-do assign_author "Guesser"            "Guesser"         "Guesser" "no-address@no-domain.com"
-do assign_author "György\sSzombathelyi" "Szombathelyi"  "György Szombathelyi" "no-address@no-domain.com"
+do assign_author "Guesser"            "Guesser"         "Guesser" "alistair@zxnet.co.uk"
+do assign_author "György\sSzombathelyi" "Szombathelyi"  "György Szombathelyi" "gyurco@freemail.hu"
 do assign_author "Jiri\sBenc"         "JiriBenc"        "Jiri Benc" "no-address@no-domain.com"
 do assign_author "Jon\sMitchell"      "JonMitchell"     "Jon Mitchell" "no-address@no-domain.com"
 do assign_author "Ooblick"            "JonMitchell"     "Jon Mitchell" "no-address@no-domain.com"
 do assign_author "José\sManuel\sFerrer\sOrtiz" "JoséManuel" "José Manuel Ferrer Ortiz" "no-address@no-domain.com"
-do assign_author "ketmar"             "ketmar"          "ketmar" "no-address@no-domain.com"
+do assign_author "ketmar"             "ketmar"          "Ketmar Dark" "ketmar@ketmar.no-ip.org"
 do assign_author "Mark\sWoodmass"     "MarkWoodmass"    "Mark Woodmass" "no-address@no-domain.com"
 do assign_author "Markus\sOberhumer"  "MarkusOberhumer" "Markus F.X.J. Oberhumer" "no-address@no-domain.com"
-do assign_author "Matthew\sWestcott"  "MatthewWestcott" "Matthew Westcott" "no-address@no-domain.com"
+do assign_author "Matthew\sWestcott"  "MatthewWestcott" "Matthew Westcott" "matthew@west.co.tt"
 do assign_author "Michal\sJurica"     "MichalJurica"    "Michal Jurica" "no-address@no-domain.com"
-do assign_author "Patrik\sPersson"    "PatrikPersson"   "Patrik Persson" "no-address@no-domain.com"
+do assign_author "Patrik\sPersson"    "PatrikPersson"   "Patrik Persson" "patrik.j.persson@gmail.com"
 do assign_author "Patrik\sRak"        "PatrikRak"       "Patrik Rak" "no-address@no-domain.com"
 do assign_author "Q-Master"           "Q-Master"        "Q-Master" "no-address@no-domain.com"
 do assign_author "Rene\sLadan"        "ReneLadan"       "Rene Ladan" "no-address@no-domain.com"
