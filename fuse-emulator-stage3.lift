@@ -29,7 +29,7 @@ print * Manual author attributions
 /Merge recording of movies to fmf/c filter --regex /.*/Gergely Szasz <no-address@no-domain.com>/a
 
 # r5030 - Look port 1FFDh if paging is disabled (fixes bug #265) (Brian Ruthven and Fred).
-/\(fixes bug \#265\)/c filter --regex /.*/Brian Ruthven <no-address@no-domain.com>/a
+/\(fixes bug \#265\)/c filter --regex /.*/Brian Ruthven <bu6c87@gmail.com>/a
 
 # r5088 - Add libav10 support (thanks, Alberto Garcia) (Anton Khirnov and Sergio).
 /\(Anton Khirnov and Sergio\)/c filter --regex /.*/Anton Khirnov <anton@khirnov.net>/a
@@ -136,20 +136,20 @@ do assign_author "ketmar"             "ketmar"          "Ketmar Dark" "ketmar@ke
 do assign_author "Mark\sWoodmass"     "MarkWoodmass"    "Mark Woodmass" "no-address@no-domain.com"
 do assign_author "Markus\sOberhumer"  "MarkusOberhumer" "Markus F.X.J. Oberhumer" "no-address@no-domain.com"
 do assign_author "Matthew\sWestcott"  "MatthewWestcott" "Matthew Westcott" "matthew@west.co.tt"
-do assign_author "Michal\sJurica"     "MichalJurica"    "Michal Jurica" "no-address@no-domain.com"
+do assign_author "Michal\sJurica"     "MichalJurica"    "Michal Jurica" "mikezt@zeroteam.sk"
 do assign_author "Patrik\sPersson"    "PatrikPersson"   "Patrik Persson" "patrik.j.persson@gmail.com"
 do assign_author "Patrik\sRak"        "PatrikRak"       "Patrik Rak" "no-address@no-domain.com"
 do assign_author "Q-Master"           "Q-Master"        "Q-Master" "no-address@no-domain.com"
-do assign_author "Rene\sLadan"        "ReneLadan"       "Rene Ladan" "no-address@no-domain.com"
+do assign_author "Rene\sLadan"        "ReneLadan"       "Rene Ladan" "r.c.ladan@gmail.com"
 do assign_author "rkd77"              "rkd77"           "rkd77" "no-address@no-domain.com"
-do assign_author "from\sRussell\sMarks" "fromRussellMarks" "Russell Marks" "no-address@no-domain.com"
-do assign_author "from\sRussell"      "fromRussell"     "Russell Marks" "no-address@no-domain.com"
-do assign_author "Russell\sMarks"     "RussellMarks"    "Russell Marks" "no-address@no-domain.com"
-do assign_author "Russell"            "Russell"         "Russell Marks" "no-address@no-domain.com"
-do assign_author "Santiago\sVila"     "SantiagoVila"    "Santiago Vila" "no-address@no-domain.com"
+do assign_author "from\sRussell\sMarks" "fromRussellMarks" "Russell Marks" "russell.marks@ntlworld.com"
+do assign_author "from\sRussell"      "fromRussell"     "Russell Marks" "russell.marks@ntlworld.com"
+do assign_author "Russell\sMarks"     "RussellMarks"    "Russell Marks" "russell.marks@ntlworld.com"
+do assign_author "Russell"            "Russell"         "Russell Marks" "russell.marks@ntlworld.com"
+do assign_author "Santiago\sVila"     "SantiagoVila"    "Santiago Vila" "sanvila@debian.org"
 do assign_author "Simon\sOwen"        "SimonOwn"        "Simon Owen" "no-address@no-domain.com"
 do assign_author "Stefano\sBodrato"   "StefanoBodrato"  "Stefano Bodrato" "no-address@no-domain.com"
-do assign_author "sweetlilmr"         "sweetlilmr"      "sweetlilmre" "no-address@no-domain.com"
+do assign_author "sweetlilmr"         "sweetlilmr"      "Peter Edwards" "sweetlilmre@gmail.com"
 do assign_author "Tom\sSeddon"        "TomSeddon"       "Tom Seddon" "no-address@no-domain.com"
 do assign_author "UB880D"             "UB880D"          "UB880D" "no-address@no-domain.com"
 do assign_author "Witold"             "Witold"          "Witold Filipczyk" "no-address@no-domain.com"
