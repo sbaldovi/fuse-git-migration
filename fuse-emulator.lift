@@ -261,6 +261,7 @@ print * Typos
 <553> filter --replace /John Eliott/John Elliott/c
 <2588> filter --replace /Markus Obermuller/Markus Oberhumer/c
 <3887> filter --replace /Lucuan Langa/Lucian Langa/c
+<4178>,<5024>,<5259>,<5261>,<5311>,<5325>,<5419>,<5420> filter --replace /UB880D/ub880d/c
 (<4157>..<4531> & /Baldovi/c) filter --replace /Baldovi/Baldoví/c
 
 print * Tag creation
