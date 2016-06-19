@@ -274,11 +274,6 @@ Tag-Name: conversion-to-git
     Marks the spot at which this repository was converted from Subversion to Git.
 EOF
 
-# TODO: Tag svn conversion at r2858 - 2007-05-19T16:19:04Z!philip-fuse@shadowmagic.org.uk
-# git tag -a conversion-to-svn \
-#     $(git log --grep '^Legacy-ID: 2858$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2) \
-#     -m 'Marks the spot at which this repository was converted from CVS to Subversion.'
-
 # Graph sensible commits after modifications
 <2955>..<3009> do graph_commits branch_plusd_20070609_lifted
 
