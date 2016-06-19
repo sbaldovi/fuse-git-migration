@@ -149,7 +149,7 @@ do assign_author "Russell"            "Russell"         "Russell Marks" "russell
 do assign_author "Santiago\sVila"     "SantiagoVila"    "Santiago Vila" "sanvila@debian.org"
 do assign_author "Simon\sOwen"        "SimonOwen"       "Simon Owen" "simon@simonowen.com"
 do assign_author "Stefano\sBodrato"   "StefanoBodrato"  "Stefano Bodrato" "no-address@no-domain.com"
-do assign_author "sweetlilmr"         "sweetlilmr"      "Peter Edwards" "sweetlilmre@gmail.com"
+do assign_author "sweetlilmre"        "sweetlilmre"     "Peter Edwards" "sweetlilmre@gmail.com"
 do assign_author "Tom\sSeddon"        "TomSeddon"       "Tom Seddon" "no-address@no-domain.com"
 do assign_author "ub880d"             "ub880d"          "ub880d" "ub880d@users.sf.net"
 do assign_author "Witold"             "Witold"          "Witold Filipczyk" "no-address@no-domain.com"
