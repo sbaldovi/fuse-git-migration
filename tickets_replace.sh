@@ -9,7 +9,8 @@ fi
 
 touch $2
 
-truncate -s 0 tickets_map.sed
+rm tickets_map.sed
+touch tickets_map.sed
 
 while read -r artifact ticket; do
     echo "s/$artifact/$ticket/g" >> tickets_map.sed
