@@ -21,6 +21,12 @@ print * Manual author attributions
 # r1688 - Real joystick support (Darren/Fred)
 /Real joystick support/c filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
 
+# r3758 - Integrate Bjoern's README into the main README (2008-08-28-wii)
+<2008-08-28T20:22:40Z> filter --regex /.*/Bjoern Giesler <bjoern@giesler.de>/a
+
+# r3944 - Merge Wii port to trunk (Bjoern Giesler/Philip Kendall).
+<2009-01-10T18:17:04Z> filter --regex /.*/Bjoern Giesler <bjoern@giesler.de>/a
+
 # r4340 - Fix compilation warnings (bug #215) (Sergio Baldovi and Gergely Szasz).
 /\(bug \#215\)/c filter --regex /.*/Gergely Szasz <szaszg@hu.inter.net>/a
 
@@ -138,6 +144,8 @@ do assign_author "Jon\sMitchell"        "Jon Mitchell" "ooblick@gmail.com"
 do assign_author "Ooblick"              "Jon Mitchell" "ooblick@gmail.com"
 do assign_author "José\sManuel\sFerrer\sOrtiz" "José Manuel Ferrer Ortiz" "jmfo1982@yahoo.es"
 do assign_author "ketmar"               "Ketmar Dark" "ketmar@ketmar.no-ip.org"
+do assign_author "Kirben"               "Kirben" "kirben@optusnet.com.au"
+do assign_author "lordhoto"             "Johannes Schickel" "lordhoto@scummvm.org"
 do assign_author "Mark\sWoodmass"       "Mark Woodmass" "mark.woodmass@ntlworld.com"
 do assign_author "Markus\sOberhumer"    "Markus F.X.J. Oberhumer" "mfx@users.sf.net"
 do assign_author "Matthew\sWestcott"    "Matthew Westcott" "matthew@west.co.tt"
