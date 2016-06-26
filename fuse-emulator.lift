@@ -151,6 +151,16 @@ tag plusd_20070609-root delete
 tag wii-20080828-root delete
 tag xvideo-2007-08-31-root delete
 
+# Standardise tag names
+tag Release_0_10_0_1 rename Release-0_10_0_1
+tag Release_0_10_0_2 rename Release-0_10_0_2
+tag libspectrum-0_2_1-merge-1 rename libspectrum_0_2_1-merge-1
+tag fuse-utils-0_8_0-pre2 rename fuse-utils_0_8_0-pre2
+
+# Update commit messages with references to renamed tags
+/libspectrum-0_2_1-merge-1/c filter --replace /libspectrum-0_2_1-merge-1/libspectrum_0_2_1-merge-1/c
+/fuse-utils-0_8_0-pre2/c filter --replace /fuse-utils-0_8_0-pre2/fuse-utils_0_8_0-pre2/c
+
 print * Typos
 
 # Fix typos
