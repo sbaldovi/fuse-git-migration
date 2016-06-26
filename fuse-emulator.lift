@@ -257,6 +257,8 @@ print * Typos
 <5368> filter --replace /inital/initial/c
 <5415>,<5416> filter --replace /timming/timing/c
 <5531> filter --replace /espaces/spaces/c
+<5635> filter --replace /Slit/Split/c
+<5644> filter --replace /Ad/Add/c
 /compatability/c filter --replace /compatability/compatibility/c
 
 # Fix names
