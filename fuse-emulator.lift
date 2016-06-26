@@ -127,13 +127,15 @@ print * Tags
 # moved to /branches/console-20080518 (r3619)
 tag tipdelete-console delete
 
-# Delete tags of empty commits (r487,r1045,r3060,r3061,r3355,r3741)
+# Delete tags of empty commits (r487,r1045,r3060,r3061,r3355,r3741,r5604,r5607)
+tag emptycommit-487 delete
 tag emptycommit-1045 delete
 tag emptycommit-3060 delete
 tag emptycommit-3061 delete
 tag emptycommit-3355 delete
 tag emptycommit-3741 delete
-tag emptycommit-487 delete
+tag emptycommit-5604 delete
+tag emptycommit-5607 delete
 
 # Delete tags of root branches
 tag 2011-02-16-spectranet-root delete
