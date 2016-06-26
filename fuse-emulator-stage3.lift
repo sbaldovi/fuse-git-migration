@@ -13,20 +13,20 @@ print * Manual author attributions
 /Alexander Yurchenko's patch/c filter --regex /.*/Alexander Yurchenko <grange@rt.mipt.ru>/a
 
 # r1213 - Support for Warajevo's .DCK files (Darren/Fred).
-/Support for Warajevo's .DCK files/c filter --regex /.*/Darren Salt <no-address@no-domain.com>/a
+/Support for Warajevo's .DCK files/c filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
 
 # r1215 - TC2068 dock support (Darren/Fred).
-/TC2068 dock support/c filter --regex /.*/Darren Salt <no-address@no-domain.com>/a
+/TC2068 dock support/c filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
 
 # r1688 - Real joystick support (Darren/Fred)
-/Real joystick support/c filter --regex /.*/Darren Salt <no-address@no-domain.com>/a
+/Real joystick support/c filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
 
 # r4340 - Fix compilation warnings (bug #215) (Sergio Baldovi and Gergely Szasz).
-/\(bug \#215\)/c filter --regex /.*/Gergely Szasz <no-address@no-domain.com>/a
+/\(bug \#215\)/c filter --regex /.*/Gergely Szasz <szaszg@hu.inter.net>/a
 
 # r4664 - Merge recording of movies to fmf files from the fmfx-2010-09-14 branch
 # (patch #3034770) (Gergely Szasz with contributions from Sergio Baldoví and Fred).
-/Merge recording of movies to fmf/c filter --regex /.*/Gergely Szasz <no-address@no-domain.com>/a
+/Merge recording of movies to fmf/c filter --regex /.*/Gergely Szasz <szaszg@hu.inter.net>/a
 
 # r5030 - Look port 1FFDh if paging is disabled (fixes bug #265) (Brian Ruthven and Fred).
 /\(fixes bug \#265\)/c filter --regex /.*/Brian Ruthven <bu6c87@gmail.com>/a
@@ -122,15 +122,15 @@ do assign_author "Adrien\sDestugues"    "Adrien Destugues" "pulkomandy@pulkomand
 do assign_author "Alex\sBadea"          "Alex Badea" "vamposdecampos@gmail.com"
 do assign_author "Arda\sErdikmen"       "Arda Erdikmen" "ardarda@gmail.com"
 do assign_author "BogDan\sVatra"        "BogDan Vatra" "bogdan@kde.org"
-do assign_author "Boris\sDonko"         "Boris Donko" "no-address@no-domain.com"
-do assign_author "Catalin\sMihaila"     "Catalin Mihaila" "no-address@no-domain.com"
+do assign_author "Boris\sDonko"         "Boris Donko" "boris.donko@no-domain.com"
+do assign_author "Catalin\sMihaila"     "Catalin Mihaila" "mihaila_ac@yahoo.com"
 do assign_author "Chris\sYoung"         "Chris Young" "chris@unsatisfactorysoftware.co.uk"
-do assign_author "from\sDarren\sSalt"   "Darren Salt" "no-address@no-domain.com"
-do assign_author "Darren"               "Darren Salt" "no-address@no-domain.com"
-do assign_author "Dmitry\sSemyonov"     "Dmitry Semyonov" "no-address@no-domain.com"
+do assign_author "from\sDarren\sSalt"   "Darren Salt" "linux@youmustbejoking.demon.co.uk"
+do assign_author "Darren"               "Darren Salt" "linux@youmustbejoking.demon.co.uk"
+do assign_author "Dmitry\sSemyonov"     "Dmitry Semyonov" "linulin@users.sf.net"
 do assign_author "Garry\sLancaster"     "Garry Lancaster" "garry@garrylancaster.me.uk"
-do assign_author "Gergely\sSzasz"       "Gergely Szasz" "no-address@no-domain.com"
-do assign_author "Gergely"              "Gergely Szasz" "no-address@no-domain.com"
+do assign_author "Gergely\sSzasz"       "Gergely Szasz" "szaszg@hu.inter.net"
+do assign_author "Gergely"              "Gergely Szasz" "szaszg@hu.inter.net"
 do assign_author "Guesser"              "Guesser" "alistair@zxnet.co.uk"
 do assign_author "György\sSzombathelyi" "György Szombathelyi" "gyurco@freemail.hu"
 do assign_author "Jiri\sBenc"           "Jiri Benc" "jbenc@upir.cz"
@@ -138,8 +138,8 @@ do assign_author "Jon\sMitchell"        "Jon Mitchell" "ooblick@gmail.com"
 do assign_author "Ooblick"              "Jon Mitchell" "ooblick@gmail.com"
 do assign_author "José\sManuel\sFerrer\sOrtiz" "José Manuel Ferrer Ortiz" "jmfo1982@yahoo.es"
 do assign_author "ketmar"               "Ketmar Dark" "ketmar@ketmar.no-ip.org"
-do assign_author "Mark\sWoodmass"       "Mark Woodmass" "no-address@no-domain.com"
-do assign_author "Markus\sOberhumer"    "Markus F.X.J. Oberhumer" "no-address@no-domain.com"
+do assign_author "Mark\sWoodmass"       "Mark Woodmass" "mark.woodmass@ntlworld.com"
+do assign_author "Markus\sOberhumer"    "Markus F.X.J. Oberhumer" "mfx@users.sf.net"
 do assign_author "Matthew\sWestcott"    "Matthew Westcott" "matthew@west.co.tt"
 do assign_author "Michal\sJurica"       "Michal Jurica" "mikezt@zeroteam.sk"
 do assign_author "Patrik\sPersson"      "Patrik Persson" "patrik.j.persson@gmail.com"
