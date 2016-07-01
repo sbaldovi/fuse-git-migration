@@ -61,6 +61,11 @@ print * Ticket numbers
 <4854>,<4856>,<4857>,<4858>,<4859>,<4860>,<4861>,<4864>,<4872>,<4915> filter --replace /]//g
 <5397> filter --replace /[features:#83]/(feature request #83)/c
 <5477> filter --replace /[patches:#365]/(patch #365)/c
+<5397> filter --replace /[/(/c
+<5397> filter --replace /]/)/c
+<5397> filter --replace /features:/feature request /c
+<5477> filter --replace /[patches:/(patch /c
+<5477> filter --replace /365]/365)/c
 <5556> filter --replace /[bugs:316]/[bugs:#316]/c
 
 # Update SourceForge ticket numbers in commit messages
