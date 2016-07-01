@@ -146,7 +146,7 @@ do assign_author "José\sManuel\sFerrer\sOrtiz" "José Manuel Ferrer Ortiz" "jmf
 do assign_author "ketmar"               "Ketmar Dark" "ketmar@ketmar.no-ip.org"
 do assign_author "Kirben"               "Kirben" "kirben@optusnet.com.au"
 do assign_author "lordhoto"             "Johannes Schickel" "lordhoto@scummvm.org"
-do assign_author "Mark\sWoodmass"       "Mark Woodmass" "mark.woodmass@ntlworld.com"
+do assign_author "Mark\sWoodmass"       "Anonymous" "anonymous@no-domain.com"
 do assign_author "Markus\sOberhumer"    "Markus F.X.J. Oberhumer" "mfx@users.sf.net"
 do assign_author "Matthew\sWestcott"    "Matthew Westcott" "matthew@west.co.tt"
 do assign_author "Michal\sJurica"       "Michal Jurica" "mikezt@zeroteam.sk"
