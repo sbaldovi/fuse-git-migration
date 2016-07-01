@@ -309,6 +309,28 @@ print * Clean cvs history: X UI move
 <14> add D fuse/x.c
 <14> add D fuse/x.h
 
+print * Clean cvs history: svga UI moves
+<8> squash
+<9>..<227> expunge fuse/ui/svga/svga.c
+<9>..<227> expunge fuse/ui/svga/svga.h
+<9>..<227> expunge fuse/ui/svga/svgaui.c
+<9>..<227> expunge fuse/ui/svga/svgaui.h
+<9>..<227> expunge fuse/ui/svga/svgadisplay.c
+<9>..<227> expunge fuse/ui/svga/svgadisplay.h
+<9>..<227> expunge fuse/ui/svga/svgakeyboard.c
+<9>..<227> expunge fuse/ui/svga/svgakeyboard.h
+<228> remove deletes
+<228> add R fuse/svgadisplay.c fuse/ui/svga/svgadisplay.c
+<228> add R fuse/svgadisplay.h fuse/ui/svga/svgadisplay.h
+<228> add R fuse/svgakeyboard.c fuse/ui/svga/svgakeyboard.c
+<228> add R fuse/svgakeyboard.h fuse/ui/svga/svgakeyboard.h
+<228> add R fuse/svgaui.c fuse/ui/svga/svgaui.c
+<228> add R fuse/svgaui.h fuse/ui/svga/svgaui.h
+<14>..<228> expunge fuse/svga.c
+<14>..<228> expunge fuse/svga.h
+<14> add D fuse/svga.c
+<14> add D fuse/svga.h
+
 print * Tag creation
 
 # Tag git conversion
