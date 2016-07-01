@@ -285,27 +285,29 @@ print * Typos
 (<4157>..<4531> & /Baldovi/c) filter --replace /Baldovi/Baldoví/c
 
 # Fix file moves
+print * Clean cvs history: z80.pl creation
 <2>..<1321> expunge fuse/z80/z80.pl
+
+print * Clean cvs history: X UI move
 <3>..<226> expunge fuse/ui/xlib/x.c
 <3>..<226> expunge fuse/ui/xlib/x.h
 <3>..<226> expunge fuse/ui/xlib/xdisplay.c
-<227> remove fuse/xdisplay.c
-<227> add R fuse/xdisplay.c fuse/ui/xlib/xdisplay.c
 <3>..<226> expunge fuse/ui/xlib/xdisplay.h
-<227> remove fuse/xdisplay.h
-<227> add R fuse/xdisplay.h fuse/ui/xlib/xdisplay.h
 <3>..<226> expunge fuse/ui/xlib/xkeyboard.c
-<227> remove fuse/xkeyboard.c
-<227> add R fuse/xkeyboard.c fuse/ui/xlib/xkeyboard.c
 <3>..<226> expunge fuse/ui/xlib/xkeyboard.h
-<227> remove fuse/xkeyboard.h
+<3>..<226> expunge fuse/ui/xlib/xui.c
+<3>..<226> expunge fuse/ui/xlib/xui.h
+<227> remove deletes
+<227> add R fuse/xdisplay.c fuse/ui/xlib/xdisplay.c
+<227> add R fuse/xdisplay.h fuse/ui/xlib/xdisplay.h
+<227> add R fuse/xkeyboard.c fuse/ui/xlib/xkeyboard.c
 <227> add R fuse/xkeyboard.h fuse/ui/xlib/xkeyboard.h
-<6>..<226> expunge fuse/ui/xlib/xui.h
-<227> remove fuse/xui.h
 <227> add R fuse/xui.h fuse/ui/xlib/xui.h
-<6>..<226> expunge fuse/ui/xlib/xui.c
-<227> remove fuse/xui.c
 <227> add R fuse/xui.c fuse/ui/xlib/xui.c
+<14>..<227> expunge fuse/x.c
+<14>..<227> expunge fuse/x.h
+<14> add D fuse/x.c
+<14> add D fuse/x.h
 
 print * Tag creation
 
