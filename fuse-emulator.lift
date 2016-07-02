@@ -331,6 +331,81 @@ print * Clean cvs history: svga UI moves
 <14> add D fuse/svga.c
 <14> add D fuse/svga.h
 
+print * Clean cvs history: widget UI moves 1
+<45>..<77> expunge fuse/widget/widget.c
+<78> remove deletes
+<78> add R fuse/widget.c fuse/widget/widget.c
+
+print * Clean cvs history: widget UI moves 2
+<45>..<79> expunge fuse/widget/widget.h
+<80> remove deletes
+<80> add R fuse/widget.h fuse/widget/widget.h
+
+print * Clean cvs history: myglib moves 1
+<14>..<118> expunge fuse/myglib/myglib.c
+<14>..<118> expunge fuse/myglib/myglib.h
+<119> remove deletes
+<119> add R fuse/myglib.c fuse/myglib/myglib.c
+<119> add R fuse/myglib.h fuse/myglib/myglib.h
+
+print * Clean cvs history: GTK+ UI moves
+<6>..<225> expunge fuse/ui/gtk/gtkdisplay.c
+<6>..<226> expunge fuse/ui/gtk/gtkdisplay.h
+<6>..<225> expunge fuse/ui/gtk/gtkkeyboard.c
+<6>..<225> expunge fuse/ui/gtk/gtkkeyboard.h
+<6>..<225> expunge fuse/ui/gtk/gtkui.c
+<6>..<225> expunge fuse/ui/gtk/gtkui.h
+<226> remove fuse/gtkdisplay.c
+<226> remove fuse/gtkkeyboard.c
+<226> remove fuse/gtkkeyboard.h
+<226> remove fuse/gtkui.c
+<226> remove fuse/gtkui.h
+<226> add R fuse/gtkdisplay.c fuse/ui/gtk/gtkdisplay.c
+<226> add R fuse/gtkkeyboard.c fuse/ui/gtk/gtkkeyboard.c
+<226> add R fuse/gtkkeyboard.h fuse/ui/gtk/gtkkeyboard.h
+<226> add R fuse/gtkui.c fuse/ui/gtk/gtkui.c
+<226> add R fuse/gtkui.h fuse/ui/gtk/gtkui.h
+
+print * Clean cvs history: aalib and fb UI moves
+<50>..<228> expunge fuse/ui/aalib/aalibdisplay.c
+<50>..<228> expunge fuse/ui/aalib/aalibkeyboard.c
+<50>..<228> expunge fuse/ui/aalib/aalibkeyboard.h
+<50>..<228> expunge fuse/ui/aalib/aalibui.c
+<50>..<228> expunge fuse/ui/aalib/aalibui.h
+<229> remove fuse/aalibdisplay.c
+<229> remove fuse/aalibkeyboard.c
+<229> remove fuse/aalibkeyboard.h
+<229> remove fuse/aalibui.c
+<229> remove fuse/aalibui.h
+<229> add R fuse/aalibdisplay.c fuse/ui/aalib/aalibdisplay.c
+<229> add R fuse/aalibkeyboard.c fuse/ui/aalib/aalibkeyboard.c
+<229> add R fuse/aalibkeyboard.h fuse/ui/aalib/aalibkeyboard.h
+<229> add R fuse/aalibui.c fuse/ui/aalib/aalibui.c
+<229> add R fuse/aalibui.h fuse/ui/aalib/aalibui.h
+<14>..<228> expunge fuse/ui/fb/fbdisplay.c
+<14>..<228> expunge fuse/ui/fb/fbkeyboard.c
+<14>..<228> expunge fuse/ui/fb/fbkeyboard.h
+<14>..<228> expunge fuse/ui/fb/fbui.c
+<229> remove fuse/fbdisplay.c
+<229> remove fuse/fbkeyboard.c
+<229> remove fuse/fbkeyboard.h
+<229> remove fuse/fbui.c
+<229> add R fuse/fbdisplay.c fuse/ui/fb/fbdisplay.c
+<229> add R fuse/fbkeyboard.c fuse/ui/fb/fbkeyboard.c
+<229> add R fuse/fbkeyboard.h fuse/ui/fb/fbkeyboard.h
+<229> add R fuse/fbui.c fuse/ui/fb/fbui.c
+
+print * Clean cvs history: UI header moves
+<14>..<229> expunge fuse/ui/ui.h
+<14>..<229> expunge fuse/ui/uidisplay.h
+<230> remove deletes
+<230> add R fuse/ui.h fuse/ui/ui.h
+<230> add R fuse/uidisplay.h fuse/ui/uidisplay.h
+
+print * Clean cvs history: myglib moves 2
+<14>..<582> expunge libspectrum/myglib.c
+<583> add C fuse/myglib/myglib.c libspectrum/myglib.c
+
 print * Tag creation
 
 # Tag git conversion
