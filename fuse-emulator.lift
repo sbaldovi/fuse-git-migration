@@ -417,6 +417,49 @@ print * Clean cvs history: sound moves
 <2035> add R fuse/sdlsound.c fuse/sound/sdlsound.c
 <2035> add R fuse/sunsound.c fuse/sound/sunsound.c
 
+print * Clean cvs history: machines moves
+<1176>..<2078> expunge fuse/machines/pentagon.c
+<1176>..<2078> expunge fuse/machines/pentagon.h
+<2023>..<2078> expunge fuse/machines/scorpion.c
+<2023>..<2078> expunge fuse/machines/scorpion.h
+<2>..<2078> expunge fuse/machines/spec128.c
+<2>..<2078> expunge fuse/machines/spec128.h
+<1005>..<2078> expunge fuse/machines/spec16.c
+<1005>..<2078> expunge fuse/machines/spec16.h
+<2>..<2078> expunge fuse/machines/spec48.c
+<2>..<2078> expunge fuse/machines/spec48.h
+<2>..<2078> expunge fuse/machines/specplus2.c
+<2>..<2078> expunge fuse/machines/specplus2.h
+<465>..<2078> expunge fuse/machines/specplus2a.c
+<465>..<2078> expunge fuse/machines/specplus2a.h
+<2>..<2078> expunge fuse/machines/specplus3.c
+<2>..<2078> expunge fuse/machines/specplus3.h
+<443>..<2078> expunge fuse/machines/tc2048.c
+<443>..<2078> expunge fuse/machines/tc2048.h
+<1195>..<2078> expunge fuse/machines/tc2068.c
+<1195>..<2078> expunge fuse/machines/tc2068.h
+<2079> remove deletes
+<2079> add R fuse/pentagon.c fuse/machines/pentagon.c
+<2079> add R fuse/pentagon.h fuse/machines/pentagon.h
+<2079> add R fuse/scorpion.c fuse/machines/scorpion.c
+<2079> add R fuse/scorpion.h fuse/machines/scorpion.h
+<2079> add R fuse/spec128.c fuse/machines/spec128.c
+<2079> add R fuse/spec128.h fuse/machines/spec128.h
+<2079> add R fuse/spec16.c fuse/machines/spec16.c
+<2079> add R fuse/spec16.h fuse/machines/spec16.h
+<2079> add R fuse/spec48.c fuse/machines/spec48.c
+<2079> add R fuse/spec48.h fuse/machines/spec48.h
+<2079> add R fuse/specplus2.c fuse/machines/specplus2.c
+<2079> add R fuse/specplus2.h fuse/machines/specplus2.h
+<2079> add R fuse/specplus2a.c fuse/machines/specplus2a.c
+<2079> add R fuse/specplus2a.h fuse/machines/specplus2a.h
+<2079> add R fuse/specplus3.c fuse/machines/specplus3.c
+<2079> add R fuse/specplus3.h fuse/machines/specplus3.h
+<2079> add R fuse/tc2048.c fuse/machines/tc2048.c
+<2079> add R fuse/tc2048.h fuse/machines/tc2048.h
+<2079> add R fuse/tc2068.c fuse/machines/tc2068.c
+<2079> add R fuse/tc2068.h fuse/machines/tc2068.h
+
 print * Tag creation
 
 # Tag git conversion
