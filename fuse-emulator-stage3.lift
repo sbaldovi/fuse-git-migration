@@ -2,15 +2,102 @@
 # echo 1
 
 
-# Manual attributions of co-author contributions
-# ==============================================
+# Manual attributions and co-authored contributions
+# =================================================
 print * Manual author attributions
 
 # (Fred/ScummVM team)
 /\(Fred.ScummVM\steam\)/c filter --regex /.*/Fredrick Meunier <fredm@spamcop.net>/a
 
+# r96 - Various sound improvements from Russell Marks.
+<2001-10-21T15:47:33Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r101 - More tweaks from Russell Marks.
+<2001-10-24T15:45:06Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r132 - Stereo sound patch from Russell Marks.
+<2001-11-16T15:59:08Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r135 - Added man page from Russell Marks.
+<2001-11-16T16:20:29Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r143 - Small updates from Russell.
+<2001-11-19T23:04:04Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r153 - Man page update from Russell.
+<2001-11-26T22:35:04Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r158 - Another sound fix from Russell.
+<2001-11-27T19:17:59Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r172 - Update from Russell.
+<2001-11-29T23:12:10Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r173 - Patch from Russell to emulate AY register 15.
+<2001-12-08T00:36:47Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r183 - Another R15 fix from Russell.
+<2001-12-11T00:57:40Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r197 - Added Kempston joystick support from Russell.
+<2001-12-15T14:22:53Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r202 - Man page update from Russell.
+<2001-12-17T18:07:28Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r235 - Improved AY levels from Russell/Matthew Westcott.
+<2002-01-02T14:25:29Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r244 - Support for printers on 48K (ZX Printer) and +3 (parallel port).
+<2002-01-08T11:54:24Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r247 - Added tzxlist man page from Darren Salt.
+<2002-01-09T14:39:07Z> filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
+
+# r299 - Timing fixes from Russell.
+<2002-01-19T17:37:32Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
 # r348 - Alexander Yurchenko's patch for OpenBSD (and Solaris?) sound.
 /Alexander Yurchenko's patch/c filter --regex /.*/Alexander Yurchenko <grange@rt.mipt.ru>/a
+
+# r383 - Russell's patch to check for stop bits when writing output.
+<2002-03-09T23:35:08Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r404 - Man page update from Russell.
+<2002-03-19T14:14:24Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r424 - First version of Fred's TC2048 patch committed onto branch.
+<2002-03-22T15:14:12Z> filter --regex /.*/Fredrick Meunier <fredm@spamcop.net>/a
+
+# r455 - TC2048 improvements from Fred
+<2002-04-03T11:10:49Z> filter --regex /.*/Fredrick Meunier <fredm@spamcop.net>/a
+
+# r499 - Patch from Fred to fix multiply defined symbols.
+<2002-07-31T14:00:05Z> filter --regex /.*/Fredrick Meunier <fredm@spamcop.net>/a
+
+# r546 - Darren's patches to allow use of 640x480x256.
+<2002-08-13T20:48:02Z> filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
+
+# r548 - Updates from Russell, basically with respect to the addition of +3
+<2002-08-16T15:18:05Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
+
+# r581 - Patch from Fred to enable OS X compilation
+/Patch from Fred to enable OS X compilation/c filter --regex /.*/Fredrick Meunier <fredm@spamcop.net>/a
+
+# r594 - Add details from Fred on how to build Fuse for OS X.
+<2002-08-27T08:53:20Z> filter --regex /.*/Fredrick Meunier <fredm@spamcop.net>/a
+
+# r656 - Darren's patch to make keysyms.c generate only the stuff for the apropriate UI
+<2002-09-18T15:28:34Z> filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
+
+# r657 - Further framebuffer fixes from Darren.
+/Further framebuffer fixes from Darren/c filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
+
+# r1022 - Add Fred's frame-skipping patch (for UIs using uidisplay_frame_end).
+<2003-02-08T19:57:34Z> filter --regex /.*/Fredrick Meunier <fredm@spamcop.net>/a
+
+# r1207 - More man page updates, mostly from Russell.
+<2003-04-13T12:19:58Z> filter --regex /.*/Russell Marks <russell.marks@ntlworld.com>/a
 
 # r1213 - Support for Warajevo's .DCK files (Darren/Fred).
 /Support for Warajevo's .DCK files/c filter --regex /.*/Darren Salt <linux@youmustbejoking.demon.co.uk>/a
