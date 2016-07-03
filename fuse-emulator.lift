@@ -478,6 +478,17 @@ print * Clean cvs history: machines moves
 <2079> add R fuse/tc2068.c fuse/machines/tc2068.c
 <2079> add R fuse/tc2068.h fuse/machines/tc2068.h
 
+print * Clean cvs history: getopt moves
+<815>..<1419> expunge fuse/compat/getopt.c
+<815>..<1419> expunge fuse/compat/getopt.h
+<815>..<1419> expunge fuse/compat/getopt1.c
+<1420> split in fuse/compat/
+<2003-06-21T15:18:10Z#1> remove fuse/getopt/getopt.c
+<2003-06-21T15:18:10Z#1> remove fuse/getopt/getopt.h
+<2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt.c fuse/compat/getopt.c
+<2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt.h fuse/compat/getopt.h
+<2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt1.c fuse/compat/getopt1.c
+
 print * Tag creation
 
 # Tag git conversion
