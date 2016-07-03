@@ -126,6 +126,11 @@ branch Release_0_6_1-branch delete
 branch Release-1_1_0 delete
 # tag tipdelete-Release-1_1_0 delete
 
+# Delete empty cvs2svn unlabeled branches
+branch unlabeled-1.20.4 delete
+branch unlabeled-1.27.2 delete
+branch unlabeled-1.29.2 delete
+
 print * Tags
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
