@@ -77,11 +77,22 @@ mailbox_in <tickets_lifted.box
 <1> squash
 
 # Coalesce 'last minute' errors into their parents, mostly fixing typos in
-# ChangeLog, iif have the same author and don't add a new entry in ChangeLog.
+# ChangeLog, iif have the same author.
+<3362> remove gdos-tools/hacking/ChangeLog
+<3363> squash --pushback
+<3855> remove fuse/hacking/ChangeLog
+<3856> squash --pushback
+<4016> remove fuse/hacking/ChangeLog
+<4017> squash --pushback
 <4317> squash --pushback
+<4423> remove fuse/hacking/ChangeLog
+<4424> squash --pushback
+<4872> remove fuse/hacking/ChangeLog
 <4873> squash --pushback
 <4910> filter --replace /#290)(thanks, Guesser)/#290) (thanks, Guesser)/c
+<4910> remove fuse/hacking/ChangeLog
 <4911> squash --pushback
+<4937> squash --pushback
 
 # Branch plusd_20070609 ends development in r3006, committed to trunk by r3007
 # and r3008. There is no mergeinfo. Squash r3007 and r3008, merge at r3007.
