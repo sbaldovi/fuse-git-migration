@@ -489,6 +489,52 @@ print * Clean cvs history: getopt moves
 <2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt.h fuse/compat/getopt.h
 <2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt1.c fuse/compat/getopt1.c
 
+print * Clean cvs history: fuse-utils moves
+<121>..<686> expunge fuse-utils/.gitignore
+<121>..<686> expunge fuse-utils/Makefile.am
+<121>..<686> expunge fuse-utils/rzxdump.c
+<121>..<686> expunge fuse-utils/rzx2dump.c
+<121>..<686> expunge fuse-utils/rzxtool.c
+<121>..<686> expunge fuse-utils/tzxlist.c
+<121>..<686> expunge fuse-utils/tzxconv.c
+<488>..<503> expunge fuse/utils/rzxdump.c
+<504> remove D fuse/utils/rzx2dump.c
+<504> split in fuse/utils/rzxdump.c
+<2002-08-04T14:38:02Z#1> add R fuse/utils/rzx2dump.c fuse/utils/rzxdump.c
+
+<688> remove deletes
+<687> remove M fuse-utils/.gitignore to <688>
+<687> remove M fuse-utils/Makefile.am to <688>
+<687> remove M fuse-utils/rzxdump.c to <688>
+<687> add D fuse/utils/.gitignore
+<687> add R fuse/utils/Makefile.am fuse-utils/Makefile.am
+<687> add R fuse/utils/tzxconv.c fuse-utils/tzxconv.c
+<687> add R fuse/utils/rzxdump.c fuse-utils/rzxdump.c
+<687> add R fuse/utils/tzxlist.c fuse-utils/tzxlist.c
+<687> add R fuse/utils/rzxtool.c fuse-utils/rzxtool.c
+
+<135>..<689> expunge fuse-utils/man/.gitignore
+<135>..<688> expunge fuse-utils/man/Makefile.am
+<549>..<689> expunge fuse-utils/man/rzxdump.1
+<550>..<689> expunge fuse-utils/man/rzxtool.1
+<247>..<689> expunge fuse-utils/man/tzxlist.1
+<690> remove deletes
+<689> remove M fuse-utils/man/Makefile.am to <690>
+<689> add C fuse/man/.gitignore fuse-utils/man/.gitignore
+<689> add C fuse/man/Makefile.am fuse-utils/man/Makefile.am
+<689> add R fuse/man/rzxdump.1 fuse-utils/man/rzxdump.1
+<689> add R fuse/man/rzxtool.1 fuse-utils/man/rzxtool.1
+<689> add R fuse/man/tzxlist.1 fuse-utils/man/tzxlist.1
+
+<592>..<955> expunge fuse-utils/tapeconv.c
+<592>..<955> expunge fuse-utils/man/tapeconv.1
+<956> remove D fuse-utils/tzxconv.c
+<956> remove D fuse-utils/man/tzxconv.1
+<956> split in fuse-utils/tapeconv.c
+<2003-01-05T13:26:02Z#1> remove fuse-utils/man/tapeconv.1 to <2003-01-05T13:26:02Z#2>
+<2003-01-05T13:26:02Z#1> add R fuse-utils/tzxconv.c fuse-utils/tapeconv.c
+<2003-01-05T13:26:02Z#1> add R fuse-utils/man/tzxconv.1 fuse-utils/man/tapeconv.1
+
 print * Tag creation
 
 # Tag git conversion
