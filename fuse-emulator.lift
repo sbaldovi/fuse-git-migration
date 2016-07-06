@@ -162,16 +162,6 @@ print * Tags
 # moved to /branches/console-20080518 (r3619)
 tag tipdelete-console delete
 
-# Delete tags of empty commits (r487,r1045,r3060,r3061,r3355,r3741,r5604,r5607)
-tag emptycommit-487 delete
-tag emptycommit-1045 delete
-tag emptycommit-3060 delete
-tag emptycommit-3061 delete
-tag emptycommit-3355 delete
-tag emptycommit-3741 delete
-tag emptycommit-5604 delete
-tag emptycommit-5607 delete
-
 # Delete tags of root branches
 tag 2011-02-16-spectranet-root delete
 tag 2011-02-18-memory-root delete
@@ -550,6 +540,18 @@ print * Clean cvs history: fuse-utils moves
 <2003-01-05T13:26:02Z#1> add R fuse-utils/man/tzxconv.1 fuse-utils/man/tapeconv.1
 
 print * Tag creation
+
+# Delete tags of empty commits
+tag emptycommit-487 delete
+tag emptycommit-489.2 delete
+tag emptycommit-489.4 delete
+tag emptycommit-1045 delete
+tag emptycommit-3060 delete
+tag emptycommit-3061 delete
+tag emptycommit-3355 delete
+tag emptycommit-3741 delete
+tag emptycommit-5604 delete
+tag emptycommit-5607 delete
 
 # Tag git conversion
 mailbox_in --create <<EOF
