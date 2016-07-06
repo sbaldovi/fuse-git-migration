@@ -146,6 +146,18 @@ branch unlabeled-1.29.2 delete
 # expunged as we only moved fuse/utils/Makefile.am to fuse-utils in r687
 branch unlabeled-1.1.6 delete
 
+# unlabeled-1.34.2 only had libspectrum/snapshot.c from 709 which was actually 
+# a mirrored version of
+# libspectrum_0_1_0pre1-crypto-branch/libspectrum/libspectrum.c
+<15>..<788> expunge libspectrum/snapshot.c
+branch unlabeled-1.34.2 delete
+<789> split in libspectrum/Makefile.am
+<2002-11-21T21:19:40Z#1> remove M libspectrum/libspectrum.c to <2002-11-21T21:19
+:40Z#2>
+<2002-11-21T21:19:40Z#1> remove M libspectrum/snapshot.c to <2002-11-21T21:19:40
+Z#2>
+<2002-11-21T21:19:40Z#1> add C libspectrum/libspectrum.c libspectrum/snapshot.c
+
 print * Tags
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
