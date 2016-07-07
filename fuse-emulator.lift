@@ -433,6 +433,10 @@ print * Clean cvs history: myglib moves 2
 <14>..<582> expunge libspectrum/myglib.c
 <583> add C fuse/myglib/myglib.c libspectrum/myglib.c
 
+<14>..<2107> expunge libspectrum/myglib/gslist.c
+<2108> remove D libspectrum/myglib.c
+<2108> add R libspectrum/myglib.c libspectrum/myglib/gslist.c
+
 print * Clean cvs history: sound moves
 <1753>..<2034> expunge fuse/sound/dxsound.c
 <14>..<2034> expunge fuse/sound/osssound.c
