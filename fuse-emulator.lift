@@ -363,6 +363,11 @@ print * Clean cvs history: widget UI moves 2
 <80> remove deletes
 <80> add R fuse/widget.h fuse/widget/widget.h
 
+<45>..<841> expunge fuse/widget/widget_internals.h
+<842> split in fuse/widget/widget_internals.h
+<2002-12-03T23:29:06Z#1> remove M fuse/widget/widget.h to <2002-12-03T23:29:06Z#2>
+<2002-12-03T23:29:06Z#1> add C fuse/widget/widget.h fuse/widget/widget_internals.h
+
 print * Clean cvs history: myglib moves 1
 <14>..<118> expunge fuse/myglib/myglib.c
 <14>..<118> expunge fuse/myglib/myglib.h
