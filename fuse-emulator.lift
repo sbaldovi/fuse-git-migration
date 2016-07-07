@@ -498,6 +498,17 @@ print * Clean cvs history: getopt moves
 <2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt.h fuse/compat/getopt.h
 <2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt1.c fuse/compat/getopt1.c
 
+print * Clean cvs history: settings moves
+<30>..<683> expunge fuse/settings.pl
+<684> remove deletes
+<684> split in fuse/settings.pl
+<2002-09-24T14:38:57Z#1> add R fuse/settings.c fuse/settings.pl
+
+<30>..<690> expunge fuse/settings-header.pl
+<691> remove deletes
+<691> split in fuse/settings-header.pl
+<2002-09-25T15:53:24Z#1> add R fuse/settings.h fuse/settings-header.pl
+
 print * Clean cvs history: fuse-utils moves
 <121>..<686> expunge fuse-utils/.gitignore
 <121>..<686> expunge fuse-utils/Makefile.am
