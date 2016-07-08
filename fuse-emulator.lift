@@ -502,6 +502,11 @@ print * Clean cvs history: getopt moves
 <2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt.h fuse/compat/getopt.h
 <2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt1.c fuse/compat/getopt1.c
 
+print * Clean cvs history: options moves
+<365>..<366> expunge fuse/ui/options.dat
+<367> remove D fuse/ui/gtk/options.dat
+<367> add R fuse/ui/gtk/options.dat fuse/ui/options.dat
+
 print * Clean cvs history: settings moves
 <30>..<683> expunge fuse/settings.pl
 <684> remove deletes
