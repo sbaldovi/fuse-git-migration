@@ -14,6 +14,8 @@ tip >debug/debug.tips
 [fuse/gtkdisplay.c]     inspect >debug/fuse_gtkdisplay_c.txt
 [fuse/gtkdisplay.h]     inspect >debug/fuse_gtkdisplay_h.txt
 [fuse/gtk.h]            inspect >debug/fuse_gtk_h.txt
+[fuse/libspectrum/libspectrum.c] inspect >debug/fuse_libspectrum_libspectrum_c.txt
+[fuse/libspectrum/libspectrum.h] inspect >debug/fuse_libspectrum_libspectrum_h.txt
 [fuse/libspectrum/rzx.c]  inspect >debug/fuse_libspectrum_rzx_c.txt
 [fuse/libspectrum/sna.c]  inspect >debug/fuse_libspectrum_sna_c.txt
 [fuse/libspectrum/tap.c]  inspect >debug/fuse_libspectrum_tap.txt
@@ -59,5 +61,6 @@ tip >debug/debug.tips
 
 # libspectrum history
 [libspectrum/libspectrum.c]   inspect >debug/libspectrum_libspectrum_c.txt
+[libspectrum/libspectrum.h.in] inspect >debug/libspectrum_libspectrum_h_in.txt
 [libspectrum/make-perl.c]     inspect >debug/libspectrum_make-perl_c.txt
 [libspectrum/myglib/gslist.c] inspect >debug/libspectrum_myglib_gslist_c.txt

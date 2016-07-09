@@ -164,10 +164,17 @@ branch unlabeled-1.5.2 delete
 <332>..<569> expunge fuse/rzx.c
 <332>..<569> expunge fuse/rzx.h
 
-<15>..<569> expunge libspectrum/Makefile.am
-<15>..<569> expunge libspectrum/libspectrum.c
-<15>..<569> expunge libspectrum/libspectrum.h.in
-<15>..<569> expunge libspectrum/libspectrum.h
+<15>..<568> expunge libspectrum/Makefile.am
+<15>..<568> expunge libspectrum/libspectrum.c
+<15>..<568> expunge libspectrum/libspectrum.h
+<569> add C fuse/libspectrum/libspectrum.c libspectrum/libspectrum.c
+<569> add C fuse/libspectrum/libspectrum.h libspectrum/libspectrum.h
+
+<15>..<575> expunge libspectrum/libspectrum.h.in
+<576> remove D libspectrum/libspectrum.h
+<576> split in libspectrum/libspectrum.h.in
+<2002-08-19T14:04:25Z#1> add R libspectrum/libspectrum.h libspectrum/libspectrum.h.in
+
 <331>..<569> expunge libspectrum/rzx.c
 <331>..<569> expunge libspectrum/rzx.h
 <332> split in fuse/libspectrum/rzx.c
