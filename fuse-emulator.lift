@@ -194,6 +194,19 @@ branch unlabeled-1.5.2 delete
 # r581
 branch unlabeled-1.37.2 delete
 
+# unlabeled-1.1.2 just has mirror changes of fuse/ui/scaler/scaler.c in
+# fuse/ui/scaler/scalers.c which wasn't really added until r1104
+<1046.2>..<1103> expunge fuse/ui/scaler/scalers.c
+#  Release-0_5_2pre1-scaler-branch was merged in r1085
+<1084>..<1085> merge
+
+<1104> split in fuse/ui/scaler/scaler.c
+<2003-03-19T17:37:40Z#1> remove M fuse/ui/scaler/scaler_internals.h to <2003-03-19T17:37:40Z#2>
+<2003-03-19T17:37:40Z#1> remove M fuse/ui/scaler/scalers.c to <2003-03-19T17:37:40Z#2>
+<2003-03-19T17:37:40Z#1> add C fuse/ui/scaler/scaler.c fuse/ui/scaler/scalers.c
+
+branch unlabeled-1.1.2 delete
+
 print * Tags
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
