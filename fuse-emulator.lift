@@ -54,8 +54,6 @@ print * Ticket numbers
 <4772> filter --replace /3488036/#3488036/c
 <4854>,<4856>,<4857>,<4858>,<4859>,<4860>,<4861>,<4864>,<4872>,<4915> filter --replace /[//g
 <4854>,<4856>,<4857>,<4858>,<4859>,<4860>,<4861>,<4864>,<4872>,<4915> filter --replace /]//g
-<5397> filter --replace /[features:#83]/(feature request #83)/c
-<5477> filter --replace /[patches:#365]/(patch #365)/c
 <5397> filter --replace /[/(/c
 <5397> filter --replace /]/)/c
 <5397> filter --replace /features:/feature request /c
