@@ -156,6 +156,39 @@ branch unlabeled-1.34.2 delete
 <2002-11-21T21:19:40Z#1> remove M libspectrum/snapshot.c to <2002-11-21T21:19:40Z#2>
 <2002-11-21T21:19:40Z#1> add C libspectrum/libspectrum.c libspectrum/snapshot.c
 
+# unlabeled-1.2.6 only has fuse-utils/.cvsignore from r489 which is a mirror of
+# Release-0_4_2-rzx2-branch/fuse/utils/.cvsignore
+branch unlabeled-1.2.6 delete
+
+# libspectrum/rzx.h
+branch unlabeled-1.3.4 delete
+# libspectrum/rzx.c
+branch unlabeled-1.5.2 delete
+
+# Cleanup Release-0_4_2-rzx2-branch
+<331> expunge fuse/libspectrum/rzx.c
+<331> expunge fuse/libspectrum/rzx.h
+<332>..<569> expunge fuse/rzx.c
+<332>..<569> expunge fuse/rzx.h
+
+<15>..<569> expunge libspectrum/Makefile.am
+<15>..<569> expunge libspectrum/libspectrum.c
+<15>..<569> expunge libspectrum/libspectrum.h.in
+<15>..<569> expunge libspectrum/libspectrum.h
+<331>..<569> expunge libspectrum/rzx.c
+<331>..<569> expunge libspectrum/rzx.h
+
+<332> split in fuse/libspectrum/rzx.c
+<2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/rzx.h to <2002-02-08T15:11:53Z#2>
+<2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/Makefile.am to <2002-02-08T15:11:53Z#2>
+<2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/libspectrum.c to <2002-02-08T15:11:53Z#2>
+<2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/libspectrum.h to <2002-02-08T15:11:53Z#2>
+<2002-02-08T15:11:53Z#1> add R fuse/rzx.c fuse/libspectrum/rzx.c
+<2002-02-08T15:11:53Z#1> add R fuse/rzx.h fuse/libspectrum/rzx.h
+
+# Release-0_4_2-rzx2-branch was merged to trunk in r491
+<489.1>..<491> merge
+
 print * Tags
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
@@ -307,6 +340,12 @@ print * Typos
 # Fix file moves
 print * Clean cvs history: z80.pl creation
 <2>..<1321> expunge fuse/z80/z80.pl
+1322> split in fuse/z80/.gitignore
+<2003-05-24T12:41:10Z#1> remove M fuse/z80/Makefile.am to <2003-05-24T12:41:10Z#2>
+<2003-05-24T12:41:10Z#1> remove M fuse/z80/opcodes_base.dat to <2003-05-24T12:41:10Z#2>
+<2003-05-24T12:41:10Z#1> remove M fuse/z80/z80.pl to <2003-05-24T12:41:10Z#2>
+<2003-05-24T12:41:10Z#1> remove M fuse/z80/z80_ops.c to <2003-05-24T12:41:10Z#2>
+<2003-05-24T12:41:10Z#1> add C fuse/z80/z80_ops.c fuse/z80/z80.pl
 
 print * Clean cvs history: X UI move
 <3>..<226> expunge fuse/ui/xlib/x.c
