@@ -213,6 +213,15 @@ branch unlabeled-1.1.2 delete
 # fuse-utils_0_8_0-branch merged r2826 to r2827
 <2826>,<2827> merge
 
+# Merge libspectrum_0_4_0-branch changes r3447:3479 to trunk.
+<3472>,<3480> merge
+
+# Merge fuse-utils_0_9_0-branch changes r3451:3480 to trunk.
+<3474>,<3481> merge
+
+# Merge Release-0_9_0-branch changes r3444:3481 to trunk.
+<3476>,<3482> merge
+
 print * Tags
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
