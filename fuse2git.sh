@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Convert to Git
-make || exit 1
+make 2>&1 | tee fuse-emulator.log || exit 1
+# stdbuf -o 0 make 2>&1 | tee fuse-emulator.log || exit 1
 
 # Tag svn conversion at r2858: 2007-05-19T16:19:04Z!philip-fuse@shadowmagic.org.uk
 cd fuse-emulator-git

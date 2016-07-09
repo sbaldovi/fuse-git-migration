@@ -98,7 +98,7 @@ tagscompare:
 # General cleanup and utility
 clean:
 	rm -fr *~ .rs* fuse-emulator-conversion.tar.gz *.svn *.fi *.fo
-	rm -fr authors/*.box brackets.box committers/*.box *.git *.svg fuse-emulator-stage2-git
+	rm -fr authors/*.box brackets.box committers/*.box *.git *.svg fuse-emulator.log fuse-emulator-stage2-git
 	rm -f debug/*.txt debug/debug.lint debug/debug.list debug/debug.sizes debug/debug.stamps debug/debug.tags debug/debug.tips
 	rm -f tickets_initial.box tickets_lifted.box tickets_map.sed 
 
