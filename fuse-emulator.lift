@@ -170,7 +170,6 @@ branch unlabeled-1.5.2 delete
 <15>..<569> expunge libspectrum/libspectrum.h
 <331>..<569> expunge libspectrum/rzx.c
 <331>..<569> expunge libspectrum/rzx.h
-
 <332> split in fuse/libspectrum/rzx.c
 <2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/rzx.h to <2002-02-08T15:11:53Z#2>
 <2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/Makefile.am to <2002-02-08T15:11:53Z#2>
@@ -634,6 +633,31 @@ print * Clean cvs history: libspectrum moves
 <1279> remove D libspectrum/make-sed.c
 <1279> split in libspectrum/make-perl.c
 <2003-05-03T19:36:16Z#1> add R libspectrum/make-sed.c libspectrum/make-perl.c
+
+<48>..<568> expunge libspectrum/.gitignore
+<17>..<568> expunge libspectrum/sna.c
+<569> add C fuse/libspectrum/sna.c libspectrum/sna.c
+<105>..<568> expunge libspectrum/tap.c
+<569> add C fuse/libspectrum/tap.c libspectrum/tap.c
+<103>..<568> expunge libspectrum/tape.c
+<569> add C fuse/libspectrum/tape.c libspectrum/tape.c
+<103>..<568> expunge libspectrum/tape.h
+<569> add C fuse/libspectrum/tape.h libspectrum/tape.h
+<15>..<568> expunge libspectrum/z80.c
+<569> add C fuse/libspectrum/z80.c libspectrum/z80.c
+<521>..<568> expunge libspectrum/zlib.c
+<569> add C fuse/libspectrum/zlib.c libspectrum/zlib.c
+
+<113>..<245> expunge libspectrum/tzx.c
+<246> split in fuse/libspectrum/tzx.c
+<2002-01-08T12:30:57Z#1> remove M fuse/libspectrum/tzx_read.c to <2002-01-08T12:30:57Z#2>
+<2002-01-08T12:30:57Z#1> remove M fuse/libspectrum/tzx_write.c to <2002-01-08T12:30:57Z#2>
+<2002-01-08T12:30:57Z#1> add C fuse/libspectrum/tzx.c fuse/libspectrum/tzx_read.c
+<2002-01-08T12:30:57Z#1> add C fuse/libspectrum/tzx.c fuse/libspectrum/tzx_write.c
+<113>..<568> expunge libspectrum/tzx_read.c
+<113>..<568> expunge libspectrum/tzx_write.c
+<569> add C fuse/libspectrum/tzx_read.c libspectrum/tzx_read.c
+<569> add C fuse/libspectrum/tzx_write.c libspectrum/tzx_write.c
 
 print * Tag creation
 

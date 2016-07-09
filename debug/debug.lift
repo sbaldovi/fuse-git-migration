@@ -15,9 +15,15 @@ tip >debug/debug.tips
 [fuse/gtkdisplay.h]     inspect >debug/fuse_gtkdisplay_h.txt
 [fuse/gtk.h]            inspect >debug/fuse_gtk_h.txt
 [fuse/libspectrum/rzx.c]  inspect >debug/fuse_libspectrum_rzx_c.txt
+[fuse/libspectrum/sna.c]  inspect >debug/fuse_libspectrum_sna_c.txt
+[fuse/libspectrum/tap.c]  inspect >debug/fuse_libspectrum_tap.txt
 [fuse/libspectrum/tape.c] inspect >debug/fuse_libspectrum_tape_c.txt
 [fuse/libspectrum/tape.h] inspect >debug/fuse_libspectrum_tape_h.txt
 [fuse/libspectrum/tzx.c]  inspect >debug/fuse_libspectrum_tzx_c.txt
+[fuse/libspectrum/tzx_read.c]  inspect >debug/fuse_libspectrum_tzx_read_c.txt
+[fuse/libspectrum/tzx_write.c] inspect >debug/fuse_libspectrum_tzx_write_c.txt
+[fuse/libspectrum/z80.c]  inspect >debug/fuse_libspectrum_z80_c.txt
+[fuse/libspectrum/zlib.c] inspect >debug/fuse_libspectrum_zlib_c.txt
 [fuse/myglib/myglib.c]    inspect >debug/fuse_myglib_c.txt
 [fuse/rzx.c]              inspect >debug/fuse_rzx_c.txt
 [fuse/settings-header.pl] inspect >debug/fuse_settings-header_pl.txt
