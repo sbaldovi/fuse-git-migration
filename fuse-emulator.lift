@@ -1,11 +1,6 @@
 ## Debug options
 # echo 1
-# lint >fuse-emulator.lint
-# list >fuse-emulator.list
-# sizes >fuse-emulator.sizes
-# stamp >fuse-emulator.stamps
-# tags >fuse-emulator.tags
-# tip >fuse-emulator.tips
+# script debug/debug.lift
 
 # Macro for SVG graph generation
 define graph_commits {
@@ -15,7 +10,7 @@ define graph_commits {
 }
 
 # Graph sensible commits before modifications
-<2955>..<3009> do graph_commits branch_plusd_20070609_original
+# <2955>..<3009> do graph_commits branch_plusd_20070609_original
 
 print * Thanks
 
@@ -664,12 +659,7 @@ Tag-Name: conversion-to-git
 EOF
 
 # Graph sensible commits after modifications
-<2955>..<3009> do graph_commits branch_plusd_20070609_lifted
+# <2955>..<3009> do graph_commits branch_plusd_20070609_lifted
 
 ## Debug options
-# lint >fuse-emulator-end.lint
-# list >fuse-emulator-end.list
-# stamp >fuse-emulator-end.stamps
-# tags >fuse-emulator-end.tags
-# tip >fuse-emulator-end.tips
 # =O mailbox_out >fuse-emulator-end-orphaned.box

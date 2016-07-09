@@ -4,15 +4,9 @@ fuse-emulator-mirror/
 fuse-emulator-stage2-git/
 fuse-emulator.fi
 fuse-emulator.fo
-fuse-emulator.lint
-fuse-emulator.list
-fuse-emulator.sizes
 fuse-emulator-stage2.git
 fuse-emulator-stage3.fi
-fuse-emulator.stamps
 fuse-emulator.svn
-fuse-emulator.tags
-fuse-emulator.tips
 tickets_initial.box
 tickets_lifted.box
 tickets_map.sed

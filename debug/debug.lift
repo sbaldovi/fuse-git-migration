@@ -1,0 +1,57 @@
+# Global files
+lint >debug/debug.lint
+list >debug/debug.list
+sizes >debug/debug.sizes
+stamp >debug/debug.stamps
+tags >debug/debug.tags
+tip >debug/debug.tips
+
+# fuse history
+[fuse/aaui.c]           inspect >debug/fuse_aaui_c.txt
+[fuse/compat/getopt1.c] inspect >debug/fuse_compat_getopt1_c.txt
+[fuse/compat/getopt.c]  inspect >debug/fuse_compat_getopt_c.txt
+[fuse/fbdisplay.c]      inspect >debug/fuse_fbdisplay_c.txt
+[fuse/gtkdisplay.c]     inspect >debug/fuse_gtkdisplay_c.txt
+[fuse/gtkdisplay.h]     inspect >debug/fuse_gtkdisplay_h.txt
+[fuse/gtk.h]            inspect >debug/fuse_gtk_h.txt
+[fuse/libspectrum/rzx.c]  inspect >debug/fuse_libspectrum_rzx_c.txt
+[fuse/libspectrum/tape.c] inspect >debug/fuse_libspectrum_tape_c.txt
+[fuse/libspectrum/tape.h] inspect >debug/fuse_libspectrum_tape_h.txt
+[fuse/libspectrum/tzx.c]  inspect >debug/fuse_libspectrum_tzx_c.txt
+[fuse/myglib/myglib.c]    inspect >debug/fuse_myglib_c.txt
+[fuse/rzx.c]              inspect >debug/fuse_rzx_c.txt
+[fuse/settings-header.pl] inspect >debug/fuse_settings-header_pl.txt
+[fuse/settings.pl]      inspect >debug/fuse_settings_pl.txt
+[fuse/spec48.c]         inspect >debug/fuse_spec48_c.txt
+[fuse/svga.c]           inspect >debug/fuse_svga_c.txt
+[fuse/svga.h]           inspect >debug/fuse_svga_h.txt
+[fuse/svgaui.c]         inspect >debug/fuse_svgaui_c.txt
+[fuse/tape.c]           inspect >debug/fuse_tape_c.txt
+[fuse/ui.h]             inspect >debug/fuse_ui_h.txt
+[fuse/ui/options.dat]   inspect >debug/fuse_ui_options_dat.txt
+[fuse/ui/scaler/scaler.c]  inspect >debug/fuse_ui_scaler_scaler_c.txt
+[fuse/ui/scaler/scalers.c] inspect >debug/fuse_ui_scaler_scalers_c.txt
+[fuse/utils/rzxdump.c]     inspect >debug/fuse_utils_rzxdump_c.txt
+[fuse/widget.c]            inspect >debug/fuse_widget_c.txt
+[fuse/widget.h]            inspect >debug/fuse_widget_h.txt
+[fuse/widget/widget_internals.h] inspect >debug/fuse_widget_widget_internals_h.txt
+[fuse/x.c]              inspect >debug/fuse_x_c.txt
+[fuse/xdisplay.c]       inspect >debug/fuse_xdisplay_c.txt
+[fuse/z80/z80_ops.c]    inspect >debug/fuse_z80_z80_ops_c.txt
+
+# fuse-utils history
+[fuse-utils/Makefile.am]     inspect >debug/fuseutils_Makefile_am.txt
+[fuse-utils/man/Makefile.am] inspect >debug/fuseutils_man_Makefile_am.txt
+[fuse-utils/man/rzxdump.1]   inspect >debug/fuseutils_man_rzxdump_1.txt
+[fuse-utils/man/rzxtool.1]   inspect >debug/fuseutils_man_rzxtool_1.txt
+[fuse-utils/man/tzxlist.1]   inspect >debug/fuseutils_man_tzxlist_1.txt
+[fuse-utils/rzxdump.c]  inspect >debug/fuseutils_rzxdump_c.txt
+[fuse-utils/rzxtool.c]  inspect >debug/fuseutils_rzxtool_c.txt
+[fuse-utils/tapeconv.c] inspect >debug/fuseutils_tapeconv_c.txt
+[fuse-utils/tzxconv.c]  inspect >debug/fuseutils_tzxconv_c.txt
+[fuse-utils/tzxlist.c]  inspect >debug/fuseutils_tzxlist_c.txt
+
+# libspectrum history
+[libspectrum/libspectrum.c]   inspect >debug/libspectrum_libspectrum_c.txt
+[libspectrum/make-perl.c]     inspect >debug/libspectrum_make-perl_c.txt
+[libspectrum/myglib/gslist.c] inspect >debug/libspectrum_myglib_gslist_c.txt
