@@ -189,6 +189,11 @@ branch unlabeled-1.5.2 delete
 # Release-0_4_2-rzx2-branch was merged to trunk in r491
 <489.1>..<491> merge
 
+# unlabeled-1.37.2 just had a mirror change of fuse/widget/widget_internals.h
+# from fuse/widget/widget.h but it wasn't introduced until r842 and this is
+# r581
+branch unlabeled-1.37.2 delete
+
 print * Tags
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
