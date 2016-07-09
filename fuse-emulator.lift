@@ -207,6 +207,12 @@ branch unlabeled-1.37.2 delete
 
 branch unlabeled-1.1.2 delete
 
+# libspectrum_0_3_0-branch r2818 merged to head in r2824 (0.3.0.1)
+<2818>,<2824> merge
+
+# fuse-utils_0_8_0-branch merged r2826 to r2827
+<2826>,<2827> merge
+
 print * Tags
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
