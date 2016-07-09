@@ -340,7 +340,7 @@ print * Typos
 # Fix file moves
 print * Clean cvs history: z80.pl creation
 <2>..<1321> expunge fuse/z80/z80.pl
-1322> split in fuse/z80/.gitignore
+<1322> split in fuse/z80/.gitignore
 <2003-05-24T12:41:10Z#1> remove M fuse/z80/Makefile.am to <2003-05-24T12:41:10Z#2>
 <2003-05-24T12:41:10Z#1> remove M fuse/z80/opcodes_base.dat to <2003-05-24T12:41:10Z#2>
 <2003-05-24T12:41:10Z#1> remove M fuse/z80/z80.pl to <2003-05-24T12:41:10Z#2>
