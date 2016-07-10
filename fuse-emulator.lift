@@ -159,11 +159,6 @@ branch unlabeled-1.3.4 delete
 branch unlabeled-1.5.2 delete
 
 # Cleanup Release-0_4_2-rzx2-branch
-<331> expunge fuse/libspectrum/rzx.c
-<331> expunge fuse/libspectrum/rzx.h
-<332>..<569> expunge fuse/rzx.c
-<332>..<569> expunge fuse/rzx.h
-
 <15>..<568> expunge libspectrum/Makefile.am
 <15>..<568> expunge libspectrum/libspectrum.c
 <15>..<568> expunge libspectrum/libspectrum.h
@@ -175,15 +170,10 @@ branch unlabeled-1.5.2 delete
 <576> split in libspectrum/libspectrum.h.in
 <2002-08-19T14:04:25Z#1> add R libspectrum/libspectrum.h libspectrum/libspectrum.h.in
 
-<331>..<569> expunge libspectrum/rzx.c
-<331>..<569> expunge libspectrum/rzx.h
-<332> split in fuse/libspectrum/rzx.c
-<2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/rzx.h to <2002-02-08T15:11:53Z#2>
-<2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/Makefile.am to <2002-02-08T15:11:53Z#2>
-<2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/libspectrum.c to <2002-02-08T15:11:53Z#2>
-<2002-02-08T15:11:53Z#1> remove M fuse/libspectrum/libspectrum.h to <2002-02-08T15:11:53Z#2>
-<2002-02-08T15:11:53Z#1> add R fuse/rzx.c fuse/libspectrum/rzx.c
-<2002-02-08T15:11:53Z#1> add R fuse/rzx.h fuse/libspectrum/rzx.h
+<331>..<568> expunge libspectrum/rzx.c
+<331>..<568> expunge libspectrum/rzx.h
+<569> add C fuse/libspectrum/rzx.c libspectrum/rzx.c
+<569> add C fuse/libspectrum/rzx.h libspectrum/rzx.h
 
 # Release-0_4_2-rzx2-branch-2 was merged to trunk in r491
 <489.1>..<491> merge
