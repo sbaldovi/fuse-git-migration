@@ -42,6 +42,9 @@ tip >debug/debug.tips
 [fuse/utils/rzxdump.c]     inspect >debug/fuse_utils_rzxdump_c.txt
 [fuse/widget.c]            inspect >debug/fuse_widget_c.txt
 [fuse/widget.h]            inspect >debug/fuse_widget_h.txt
+[fuse/widget/file.c]       inspect >debug/fuse_widget_file_c.txt
+[fuse/widget/general.c]    inspect >debug/fuse_widget_general_c.txt
+[fuse/widget/picture_data.tap]   list >debug/fuse_widget_picture_data_tap.txt
 [fuse/widget/widget_internals.h] inspect >debug/fuse_widget_widget_internals_h.txt
 [fuse/x.c]              inspect >debug/fuse_x_c.txt
 [fuse/xdisplay.c]       inspect >debug/fuse_xdisplay_c.txt

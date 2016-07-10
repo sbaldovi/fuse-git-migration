@@ -463,6 +463,20 @@ print * Clean cvs history: widget UI moves 2
 <2002-12-03T23:29:06Z#1> remove M fuse/widget/widget.h to <2002-12-03T23:29:06Z#2>
 <2002-12-03T23:29:06Z#1> add C fuse/widget/widget.h fuse/widget/widget_internals.h
 
+<82>..<282> expunge fuse/widget/general.c
+<283> remove D fuse/widget/options.c
+<283> split in fuse/widget/general.c
+<2002-01-15T14:59:24Z#1> add R fuse/widget/options.c fuse/widget/general.c
+
+<219>..<282> expunge fuse/widget/file.c
+<2002-01-15T14:59:24Z#1> remove M fuse/widget/file.c to <2002-01-15T14:59:24Z#2>
+<2002-01-15T14:59:24Z#1> remove D fuse/widget/snapshot_widget.c
+<2002-01-15T14:59:24Z#1> add R fuse/widget/snapshot_widget.c fuse/widget/file.c
+
+<243>..<286> expunge fuse/widget/widget_keyboard.tap
+<287> remove D fuse/widget/picture_data.tap
+<287> add R fuse/widget/picture_data.tap fuse/widget/widget_keyboard.tap
+
 print * Clean cvs history: myglib moves 1
 <14>..<118> expunge fuse/myglib/myglib.c
 <14>..<118> expunge fuse/myglib/myglib.h
