@@ -653,7 +653,7 @@ print * Clean cvs history: fuse-utils moves
 <2003-01-05T13:26:02Z#1> add R fuse-utils/man/tzxconv.1 fuse-utils/man/tapeconv.1
 
 print * Clean cvs history: libspectrum moves
-<576>..<1278> expunge libspectrum/make-perl.c
+<575>..<1278> expunge libspectrum/make-perl.c
 <1279> remove D libspectrum/make-sed.c
 <1279> split in libspectrum/make-perl.c
 <2003-05-03T19:36:16Z#1> add R libspectrum/make-sed.c libspectrum/make-perl.c
