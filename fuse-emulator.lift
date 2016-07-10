@@ -592,7 +592,8 @@ print * Clean cvs history: getopt moves
 print * Clean cvs history: options moves
 <365>..<366> expunge fuse/ui/options.dat
 <367> remove D fuse/ui/gtk/options.dat
-<367> add R fuse/ui/gtk/options.dat fuse/ui/options.dat
+<367> split in fuse/ui/options.dat
+<2002-02-26T01:22:38Z#1> add R fuse/ui/gtk/options.dat fuse/ui/options.dat
 
 print * Clean cvs history: settings moves
 <30>..<683> expunge fuse/settings.pl
