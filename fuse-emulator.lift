@@ -695,11 +695,14 @@ print * Clean cvs history: libspectrum moves
 <569> add C fuse/libspectrum/zlib.c libspectrum/zlib.c
 
 <113>..<245> expunge libspectrum/tzx.c
+<113>..<245> expunge fuse/libspectrum/tzx_read.c
+<113>..<245> expunge fuse/libspectrum/tzx_write.c
 <246> split in fuse/libspectrum/tzx.c
 <2002-01-08T12:30:57Z#1> remove M fuse/libspectrum/tzx_read.c to <2002-01-08T12:30:57Z#2>
 <2002-01-08T12:30:57Z#1> remove M fuse/libspectrum/tzx_write.c to <2002-01-08T12:30:57Z#2>
 <2002-01-08T12:30:57Z#1> add C fuse/libspectrum/tzx.c fuse/libspectrum/tzx_read.c
 <2002-01-08T12:30:57Z#1> add C fuse/libspectrum/tzx.c fuse/libspectrum/tzx_write.c
+
 <113>..<568> expunge libspectrum/tzx_read.c
 <113>..<568> expunge libspectrum/tzx_write.c
 <569> add C fuse/libspectrum/tzx_read.c libspectrum/tzx_read.c
