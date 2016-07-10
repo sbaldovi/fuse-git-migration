@@ -614,7 +614,7 @@ print * Clean cvs history: fuse-utils moves
 <121>..<686> expunge fuse-utils/rzxtool.c
 <121>..<686> expunge fuse-utils/tzxlist.c
 <121>..<686> expunge fuse-utils/tzxconv.c
-<488>..<503> expunge fuse/utils/rzxdump.c
+<486>..<503> expunge fuse/utils/rzxdump.c
 <504> remove D fuse/utils/rzx2dump.c
 <504> split in fuse/utils/rzxdump.c
 <2002-08-04T14:38:02Z#1> add R fuse/utils/rzx2dump.c fuse/utils/rzxdump.c
