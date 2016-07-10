@@ -69,6 +69,14 @@ mailbox_in <tickets_lifted.box
 # Delete futile cvs2svn commit
 <1> squash
 
+# Replace *** empty log message ***
+# Hint fuse/configure.in
+<3> filter --replace /*** empty log message ***/Version 0.2.0/c
+# Hint fuse/configure.in
+<17> filter --replace /*** empty log message ***/0.3.1-pre2/c
+# Hint changeset
+<20> filter --replace /*** empty log message ***/Refactor snapshot identify logic./c
+
 # Coalesce 'last minute' errors into their parents, mostly fixing typos in
 # ChangeLog, iif have the same author.
 <3362> remove gdos-tools/hacking/ChangeLog
