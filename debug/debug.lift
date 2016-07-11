@@ -64,6 +64,7 @@ tip >debug/debug.tips
 [fuse-utils/tzxlist.c]  inspect >debug/fuseutils_tzxlist_c.txt
 
 # libspectrum history
+[libspectrum/doc/api.txt]     inspect >debug/libspectrum_doc_api.txt
 [libspectrum/libspectrum.c]   inspect >debug/libspectrum_libspectrum_c.txt
 [libspectrum/libspectrum.h.in] inspect >debug/libspectrum_libspectrum_h_in.txt
 [libspectrum/make-perl.c]     inspect >debug/libspectrum_make-perl_c.txt

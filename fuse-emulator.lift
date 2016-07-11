@@ -743,6 +743,10 @@ print * Clean cvs history: libspectrum moves
 <569> add C fuse/libspectrum/tzx_read.c libspectrum/tzx_read.c
 <569> add C fuse/libspectrum/tzx_write.c libspectrum/tzx_write.c
 
+<640>..<859> expunge libspectrum/doc/libspectrum.txt
+<860> remove D libspectrum/doc/api.txt
+<860> add R libspectrum/doc/api.txt libspectrum/doc/libspectrum.txt
+
 print * Tag creation
 
 # Delete tags of empty commits
