@@ -204,13 +204,17 @@ branch unlabeled-1.37.2 delete
 
 branch unlabeled-1.1.2 delete
 
-# libspectrum_0_3_0-branch r2818 merged to head in r2824 (0.3.0.1)
-<2818>,<2824> merge
+# libspectrum_0_3_0-branch r2823 merged to head in r2824 (0.3.0.1)
+# Note there is a dangling extra revision (2833) that was repeated (2836)
+<2823>,<2824> merge
+<2833>,<2836> merge
 
 # fuse-utils_0_8_0_1 r2813 merged to r2827
 <2813>,<2827> merge
 
 # Merge libspectrum_0_4_0-branch changes r3447:3479 to trunk.
+# Note there is a dangling extra revision (3500) that was effectively cherry
+# picked (3499)
 <3472>,<3480> merge
 
 # Merge fuse-utils_0_9_0-branch changes r3451:3480 to trunk.
@@ -235,7 +239,9 @@ branch unlabeled-1.1.2 delete
 
 # Release-0_5_0-branch-1 r586 Changes merged to trunk at Release-0_5_0-merge-1
 # r595
+# Note there is a dangling extra revision (694) that was merged in (697)
 <586>,<595> merge
+<694>,<697> merge
 
 # Release-0_5_1pre2-debugger-branch-1 r838 Merged to trunk at
 # Release-0_5_1-merge-1 r896
@@ -266,6 +272,9 @@ branch unlabeled-1.1.2 delete
 
 # Merge libspectrum_0_2_0-bugfix-branch to trunk r1660 to r1665
 <1660>,<1665> merge
+
+# Merge changes from libspectrum_0_2_1 to HEAD.
+<1982>,<2006> merge
 
 print * Tags
 
