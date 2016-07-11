@@ -313,6 +313,7 @@ print * Typos
 #     aspell list --ignore-case | sort | uniq
 <109> filter --replace /with with/with/c
 <142>,<3739> filter --replace /the the/the/c
+<163> filter --replace /0.4.0ptr4/0.4.0pre4/c
 <178>,<179> filter --replace /initalised/initialised/c
 <182> filter --replace /preceeded/preceded/c
 <190> filter --replace /concatentation/concatenation/c
@@ -747,20 +748,65 @@ print * Clean cvs history: libspectrum moves
 <860> remove D libspectrum/doc/api.txt
 <860> add R libspectrum/doc/api.txt libspectrum/doc/libspectrum.txt
 
-print * Tag creation
+print * Delete tags of empty commits
 
-# Delete tags of empty commits
+# r487 - file rzx2dump.c was initially added on branch Release-0_4_2-rzx2-branch.
 tag emptycommit-487 delete
-tag emptycommit-489.2 delete
-tag emptycommit-489.4 delete
+# r1045 - file scaler.c was initially added on branch Release-0_5_2pre1-scaler-branch.
 tag emptycommit-1045 delete
+
+# Change svn properties
 tag emptycommit-3060 delete
 tag emptycommit-3061 delete
 tag emptycommit-3355 delete
 tag emptycommit-3741 delete
+
+# Complete reintegrate merge
 tag emptycommit-5604 delete
 tag emptycommit-5607 delete
 
+# This commit was manufactured by cvs2svn to create branch 'Release-0_4_1pre1-qtopia-branch'.
+tag emptycommit-240 delete
+# This commit was manufactured by cvs2svn to create branch 'Release-0_4_2pre3-tc2048-branch'.
+tag emptycommit-400 delete
+# This commit was manufactured by cvs2svn to create branch 'Release-0_4_2-rzx2-branch'.
+tag emptycommit-440 delete
+# This commit was manufactured by cvs2svn to create branch 'Release-0_5_0-branch'.
+tag emptycommit-567 delete
+
+# Commits manufactured with tags
+tag emptycommit-22 delete
+tag emptycommit-41 delete
+tag emptycommit-65 delete
+tag emptycommit-84 delete
+tag emptycommit-88 delete
+tag emptycommit-91 delete
+tag emptycommit-117 delete
+tag emptycommit-139 delete
+tag emptycommit-152 delete
+tag emptycommit-164 delete
+tag emptycommit-181 delete
+tag emptycommit-201 delete
+tag emptycommit-239 delete
+tag emptycommit-262 delete
+tag emptycommit-291 delete
+tag emptycommit-324 delete
+tag emptycommit-330 delete
+tag emptycommit-343 delete
+tag emptycommit-363 delete
+tag emptycommit-399 delete
+tag emptycommit-428 delete
+tag emptycommit-439 delete
+tag emptycommit-444 delete
+tag emptycommit-452 delete
+tag emptycommit-478 delete
+tag emptycommit-492 delete
+tag emptycommit-545 delete
+tag emptycommit-568 delete
+tag emptycommit-1496 delete
+tag emptycommit-1540 delete
+
+print * Tag creation
 # Tag git conversion
 mailbox_in --create <<EOF
 Tag-Name: conversion-to-git
