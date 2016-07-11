@@ -245,6 +245,28 @@ branch unlabeled-1.1.2 delete
 # Release-0_6_1pre1-merge-2 r1548
 <1544>,<1548> merge
 
+# Merge changes from fuse-utils_0_6_2 r1984 to r2008.
+<1984>,<2008> merge
+
+#  Merge from the digital signatures branch
+# (libspectrum_0_1_0-pre1-crypto-branch).
+<1539>,<1546> merge
+
+# Merge fuse-utils from the competition mode branch.
+<1537>,<1548> merge
+
+# libspectrum_0_1_1-bugfix-branch was made of 3 cherry-picked revisions from
+# trunk:
+# 1513 is a merge of 1511
+# 1514 is a merge of 1510
+# 1522 is a merge of 1520
+#
+# Leaving libspectrum_0_1_1-bugfix-branch unmerged as git doesn't store history
+# of cherrypicks
+
+# Merge libspectrum_0_2_0-bugfix-branch to trunk r1660 to r1665
+<1660>,<1665> merge
+
 print * Tags
 
 # Delete tag for accidentally created branch /branches/console (r3618), later
