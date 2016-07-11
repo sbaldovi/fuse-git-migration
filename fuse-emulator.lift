@@ -659,6 +659,10 @@ print * Clean cvs history: settings moves
 <691> split in fuse/settings-header.pl
 <2002-09-25T15:53:24Z#1> add R fuse/settings.h fuse/settings-header.pl
 
+print * Clean cvs history: font rename
+<45> path fuse/font.c rename fuse/font.h
+<61> add D fuse/font.h
+
 print * Clean cvs history: fuse-utils moves
 <121>..<686> expunge fuse-utils/.gitignore
 <121>..<686> expunge fuse-utils/Makefile.am

@@ -11,6 +11,7 @@ tip >debug/debug.tips
 [fuse/compat/getopt1.c] inspect >debug/fuse_compat_getopt1_c.txt
 [fuse/compat/getopt.c]  inspect >debug/fuse_compat_getopt_c.txt
 [fuse/fbdisplay.c]      inspect >debug/fuse_fbdisplay_c.txt
+[fuse/font.c]           inspect >debug/fuse_font_c.txt
 [fuse/gtkdisplay.c]     inspect >debug/fuse_gtkdisplay_c.txt
 [fuse/gtkdisplay.h]     inspect >debug/fuse_gtkdisplay_h.txt
 [fuse/gtk.h]            inspect >debug/fuse_gtk_h.txt
