@@ -286,8 +286,12 @@ tag tipdelete-console delete
 tag 2011-02-16-spectranet-root delete
 tag 2011-02-18-memory-root delete
 tag 2011-05-04-memory-root delete
+tag 2016-05-17-debugger-dereference-root delete
+tag bug-349-fix-wildcard-events-root delete
+tag bug-353-startup-ordering-root delete
 tag console-20080518-root delete
 tag console-root delete
+tag feature-80-more-debugger-variables-root delete
 tag ffmpeg-2010-08-07-root delete
 tag fmfx-2010-09-14-root delete
 tag ntsc-2009-04-11-root delete
