@@ -62,6 +62,8 @@ git tag Release-0_5_0pre1 $(git log --grep '^Legacy-ID: 477$' --abbrev-commit | 
 git tag Release-0_5_0pre1-merge-1 $(git log --grep '^Legacy-ID: 491$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2)
 # r545 - This commit was manufactured by cvs2svn to create tag 'Release-0_5_0pre2'.
 git tag Release-0_5_0pre2 $(git log --grep '^Legacy-ID: 544$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2)
+# r560 - This commit was manufactured by cvs2svn to create tag 'libspectrum_start'.
+git tag libspectrum_start $(git log --grep '^Legacy-ID: 569$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2)
 # r568 - This commit was manufactured by cvs2svn to create tag 'Release-0_5_0-trunk'.
 git tag Release-0_5_0-trunk $(git log --grep '^Legacy-ID: 566$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2)
 # r1496 - This commit was manufactured by cvs2svn to create tag 'libspectrum_0_1_0-pre1-crypto-branch-1'.

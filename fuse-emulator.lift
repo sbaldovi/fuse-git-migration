@@ -748,6 +748,9 @@ print * Clean cvs history: libspectrum moves
 <860> remove D libspectrum/doc/api.txt
 <860> add R libspectrum/doc/api.txt libspectrum/doc/libspectrum.txt
 
+# Move libspectrum_start tag to a proper branch start.
+<560> expunge
+
 print * Delete tags of empty commits
 
 # r487 - file rzx2dump.c was initially added on branch Release-0_4_2-rzx2-branch.
@@ -802,6 +805,7 @@ tag emptycommit-452 delete
 tag emptycommit-478 delete
 tag emptycommit-492 delete
 tag emptycommit-545 delete
+tag emptycommit-560 delete
 tag emptycommit-568 delete
 tag emptycommit-1496 delete
 tag emptycommit-1540 delete
