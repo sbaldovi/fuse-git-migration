@@ -69,6 +69,9 @@ git tag libspectrum_0_1_0-pre1-crypto-branch-1 $(git log --grep '^Legacy-ID: 149
 # r1540 - This commit was manufactured by cvs2svn to create tag 'libspectrum_0_1_0-pre1-crypto-branch-2'.
 git tag libspectrum_0_1_0-pre1-crypto-branch-2 $(git log --grep '^Legacy-ID: 1539$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2)
 
+# r4988 - branch /branches/Release-1_1_0 accidentally created in r4987, moved to /tags/Release-1_1_0 in r4988, but the actual tarball was r4955.
+git tag Release-1_1_0 $(git log --grep '^Legacy-ID: 4955$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2)
+
 # Tag svn conversion at r2858: 2007-05-19T16:19:04Z!philip-fuse@shadowmagic.org.uk
 git tag -a conversion-to-svn \
     $(git log --grep '^Legacy-ID: 2858$' --abbrev-commit | head -n 1 | cut -d ' ' -f 2) \
