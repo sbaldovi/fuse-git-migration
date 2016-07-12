@@ -681,6 +681,10 @@ print * Clean cvs history: fuse-utils moves
 <504> split in fuse/utils/rzxdump.c
 <2002-08-04T14:38:02Z#1> add R fuse/utils/rzx2dump.c fuse/utils/rzxdump.c
 
+<532>,<537> expunge fuse-utils/rzx-extract.c
+<533>,<537> expunge fuse-utils/rzx-uncompress.c
+<533> expunge fuse/utils/rzxtool.c
+
 <688> remove deletes
 <687> remove M fuse-utils/.gitignore to <688>
 <687> remove M fuse-utils/Makefile.am to <688>

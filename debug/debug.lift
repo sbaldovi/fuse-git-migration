@@ -41,6 +41,8 @@ tip >debug/debug.tips
 [fuse/ui/scaler/scaler.c]  inspect >debug/fuse_ui_scaler_scaler_c.txt
 [fuse/ui/scaler/scalers.c] inspect >debug/fuse_ui_scaler_scalers_c.txt
 [fuse/utils/rzxdump.c]     inspect >debug/fuse_utils_rzxdump_c.txt
+[fuse/utils/rzx-extract.c] inspect >debug/fuse_utils_rzx-extract_c.txt
+[fuse/utils/rzx-uncompress.c] inspect >debug/fuse_utils_rzx-uncompress_c.txt
 [fuse/widget.c]            inspect >debug/fuse_widget_c.txt
 [fuse/widget.h]            inspect >debug/fuse_widget_h.txt
 [fuse/widget/file.c]       inspect >debug/fuse_widget_file_c.txt
