@@ -1,12 +1,19 @@
 #!/bin/sh
 
+# This script split a directory on master to a new repository, without
+# branches or tags.
+
 SOURCE_REPO=../fuse-emulator-git/
+TMP_REPO=tmp-subtree
 
 split_init() {
   echo "* Create temporary repository"
-  git clone $SOURCE_REPO --no-hardlinks -- tmp
+  rm -rf $TMP_REPO
+  git clone $SOURCE_REPO --no-hardlinks -- $TMP_REPO
 }
 
+# Push a directory to a new repository
+# $1: subtree path and repository name
 split_repo() {
   test -n "$1" || exit 1
   echo
@@ -14,21 +21,22 @@ split_repo() {
 
   # create final repository
   rm -rf $1
-  mkdir $1
-  cd $1/
-  git init --bare
+  git init --bare $1
+
+  # Push to repository
+  cd $TMP_REPO/
+  git subtree push --prefix=$1 ../$1 master
   cd ..
 
-  # create filtered branch and push to repository
-  cd tmp/
-  git subtree split -P $1 -b _$1
-  git push ../$1 _$1:master
+  # Prune reflogs
+  cd $1/
+  git reflog expire --expire=now --all && git gc --prune=now --aggressive
   cd ..
 }
 
 split_end() {
   # clean files
-  rm -rf tmp
+  rm -rf $TMP_REPO
 }
 
 split_init
