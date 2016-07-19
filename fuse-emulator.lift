@@ -718,6 +718,9 @@ print * Clean cvs history: fuse-utils moves
 <2003-01-05T13:26:02Z#1> add R fuse-utils/tzxconv.c fuse-utils/tapeconv.c
 <2003-01-05T13:26:02Z#1> add R fuse-utils/man/tzxconv.1 fuse-utils/man/tapeconv.1
 
+# Move fuse-utils_start tag to a proper branch start
+<654> expunge
+
 print * Clean cvs history: libspectrum moves
 <575>..<1278> expunge libspectrum/make-perl.c
 <1279> remove D libspectrum/make-sed.c
@@ -815,6 +818,7 @@ tag emptycommit-492 delete
 tag emptycommit-545 delete
 tag emptycommit-560 delete
 tag emptycommit-568 delete
+tag emptycommit-654 delete
 tag emptycommit-1496 delete
 tag emptycommit-1540 delete
 
