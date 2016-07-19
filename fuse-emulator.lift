@@ -762,6 +762,12 @@ print * Clean cvs history: libspectrum moves
 # Move libspectrum_start tag to a proper branch start.
 <560> expunge
 
+# Squash some manufactured commits to their parent
+<1498> squash --pushback --tagback
+<1538> squash --pushback --tagback
+<1503> squash --pushback --tagback
+<1545> squash --pushback --tagback
+
 print * Delete tags of empty commits
 
 # r487 - file rzx2dump.c was initially added on branch Release-0_4_2-rzx2-branch.
