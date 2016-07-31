@@ -130,6 +130,9 @@ print * Manual author attributions
 # r5106 - Select glibtoolize where required (Sergio via fuse).
 /\(Sergio via fuse\)/c filter --regex /.*/Sergio Baldoví <serbalgi@gmail.com>/a
 
+# r5699 - Add support for reading zip files (patch #343) (Patrik Rak and Sergio).
+<2016-07-22T10:49:11Z> filter --regex /.*/Sergio Baldoví <serbalgi@gmail.com>/a
+
 
 # Generic attributions
 # ====================
@@ -220,7 +223,7 @@ do assign_author "Catalin\sMihaila"     "Catalin Mihaila" "mihaila_ac@yahoo.com"
 do assign_author "Chris\sYoung"         "Chris Young" "chris@unsatisfactorysoftware.co.uk"
 do assign_author "from\sDarren\sSalt"   "Darren Salt" "linux@youmustbejoking.demon.co.uk"
 do assign_author "Darren"               "Darren Salt" "linux@youmustbejoking.demon.co.uk"
-do assign_author "Dmitry\sSemyonov"     "Dmitry Semyonov" "linulin@users.sf.net"
+do assign_author "Dmitry\sSemyonov"     "Dmitry Semyonov" "linulin@gmail.com"
 do assign_author "Garry\sLancaster"     "Garry Lancaster" "garry@garrylancaster.me.uk"
 do assign_author "Gergely\sSzasz"       "Gergely Szasz" "szaszg@hu.inter.net"
 do assign_author "Gergely"              "Gergely Szasz" "szaszg@hu.inter.net"
