@@ -1,0 +1,12 @@
+debian/
+fuse-basic/
+fuse-emulator-core/
+fuse-mgt/
+fuse-utils/
+fuse/
+fusetest/
+gdos-tools/
+libgdos/
+libspectrum/
+tmp-bfg.bfg-report/
+website/
