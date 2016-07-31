@@ -1,0 +1,9 @@
+The conversion machinery distributes and uses the following programs:
+
+BFG Repo-Cleaner
+License GPLv3
+https://rtyley.github.io/bfg-repo-cleaner/
+
+git-subtree.sh
+License GPLv2+
+https://git.kernel.org/cgit/git/git.git/tree/contrib/subtree/git-subtree.sh

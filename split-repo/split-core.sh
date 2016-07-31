@@ -9,12 +9,17 @@ SOURCE_REPO=../fuse-emulator-git/
 TMP_REPO=tmp-bfg
 FINAL_REPO=fuse-emulator-core
 
+if test ! -f "../bin/bfg-1.12.12.jar"; then
+  echo "error: missing ../bin/bfg-1.12.12.jar"
+  exit 1
+fi
+
 # Clone to temporary repository
 rm -rf $TMP_REPO
 git clone $SOURCE_REPO --mirror --no-hardlinks -- $TMP_REPO
 
 # Remove directories
-java -jar bfg-1.12.12.jar --delete-folders {debian,fuse-basic,fuse-mgt,fusetest,gdos-tools,libgdos,website} --no-blob-protection $TMP_REPO
+java -jar ../bin/bfg-1.12.12.jar --delete-folders {debian,fuse-basic,fuse-mgt,fusetest,gdos-tools,libgdos,website} --no-blob-protection $TMP_REPO
 
 cd $TMP_REPO
 
