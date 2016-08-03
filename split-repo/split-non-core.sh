@@ -39,9 +39,14 @@ split_end() {
   rm -rf $TMP_REPO
 }
 
+if test ! -d "$SOURCE_REPO"; then
+  echo "error: missing $SOURCE_REPO"
+  exit 1
+fi
+
 split_init
 
-split_repo debian
+# split_repo debian
 # split_repo fuse
 split_repo fuse-basic
 split_repo fuse-mgt

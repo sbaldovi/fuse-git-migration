@@ -9,14 +9,20 @@ SOURCE_REPO=../fuse-emulator-git/
 TMP_REPO=tmp-fuse-utils
 FUSE_UTILS_REPO=fuse-utils
 
+# Split prefix and push to branch
 split_branch() {
   echo
   echo " * Branch $1"
 
-  git checkout -B subtree_$1 origin/$1
-  ../../bin/git-subtree.sh split --prefix=fuse-utils -b subtree_fuse_utils_$1
-  git push ../$FUSE_UTILS_REPO subtree_fuse_utils_$1:$1
+  git checkout -B $1 origin/$1
+  ../../bin/git-subtree.sh split --prefix=fuse-utils -b subtree_$1
+  git push ../$FUSE_UTILS_REPO subtree_$1:$1
 }
+
+if test ! -d "$SOURCE_REPO"; then
+  echo "error: missing $SOURCE_REPO"
+  exit 1
+fi
 
 if test ! -x "../bin/git-subtree.sh"; then
   echo "error: missing ../bin/git-subtree.sh"
@@ -37,8 +43,11 @@ split_branch master
 #split_branch 2014-09-07-ulaplus
 #split_branch 2014-12-28-sdl2
 #split_branch 2016-04-25-didaktik
-#split_branch patches-356-threadsafe-libspectrum
 #split_branch feature-53-zip-support
+#split_branch feature-100-remote-debugger
+#split_branch patches-356-threadsafe-libspectrum
+#split_branch patches-377-more-startup-manager
+
 cd ..
 rm -rf $TMP_REPO
 

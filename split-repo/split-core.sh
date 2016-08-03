@@ -9,6 +9,11 @@ SOURCE_REPO=../fuse-emulator-git/
 TMP_REPO=tmp-bfg
 FINAL_REPO=fuse-emulator-core
 
+if test ! -d "$SOURCE_REPO"; then
+  echo "error: missing $SOURCE_REPO"
+  exit 1
+fi
+
 if test ! -f "../bin/bfg-1.12.12.jar"; then
   echo "error: missing ../bin/bfg-1.12.12.jar"
   exit 1
