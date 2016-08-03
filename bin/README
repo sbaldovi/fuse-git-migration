@@ -1,9 +1,19 @@
 The conversion machinery distributes and uses the following programs:
 
 BFG Repo-Cleaner
+================
+Version 1.12.12
 License GPLv3
 https://rtyley.github.io/bfg-repo-cleaner/
 
 git-subtree.sh
+==============
+Version git-dd65a9e5e3b6298e4fa52e21680008e7fd5556ea
 License GPLv2+
 https://git.kernel.org/cgit/git/git.git/tree/contrib/subtree/git-subtree.sh
+
+reposurgeon and repotool
+========================
+Version 3.37-git-ee19e041f626ce489116c4cff11d93793b5913bc
+license BSD-2-Clause
+http://www.catb.org/~esr/reposurgeon/
