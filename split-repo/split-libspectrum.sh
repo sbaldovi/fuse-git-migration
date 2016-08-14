@@ -72,7 +72,6 @@ split_branch master
 split_branch 2014-09-07-ulaplus
 #split_branch 2014-12-28-sdl2
 #split_branch 2016-04-25-didaktik
-split_branch feature-53-zip-support
 #split_branch feature-100-remote-debugger
 split_branch patches-356-threadsafe-libspectrum
 #split_branch patches-377-more-startup-manager
