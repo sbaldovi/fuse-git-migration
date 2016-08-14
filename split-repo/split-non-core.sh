@@ -20,16 +20,16 @@ split_repo() {
   echo "* Repository $1"
 
   # create final repository
-  rm -rf $1
-  git init --bare $1
+  rm -rf $1.git
+  git init --bare $1.git
 
   # Push to repository
   cd $TMP_REPO/
-  git subtree push --prefix=$1 ../$1 master
+  git subtree push --prefix=$1 ../$1.git master
   cd ..
 
   # Prune reflogs
-  cd $1/
+  cd $1.git/
   git reflog expire --expire=now --all && git gc --prune=now --aggressive
   cd ..
 }

@@ -7,7 +7,7 @@
 
 SOURCE_REPO=../fuse-emulator-git/
 TMP_REPO=tmp-bfg
-FINAL_REPO=fuse-emulator-core
+FINAL_REPO=fuse-emulator-core.git
 
 if test ! -d "$SOURCE_REPO"; then
   echo "error: missing $SOURCE_REPO"

@@ -9,7 +9,7 @@ SOURCE_REPO=../fuse-emulator-git/
 TMP_SPLIT_REPO=tmp-libspectrum-split
 TMP_PUSH_REPO=tmp-libspectrum-push
 TMP_REPARENT_REPO=tmp-libspectrum-reparent
-LIBSPECTRUM_REPO=libspectrum
+LIBSPECTRUM_REPO=libspectrum.git
 
 # Split prefix and push to branch
 split_branch() {

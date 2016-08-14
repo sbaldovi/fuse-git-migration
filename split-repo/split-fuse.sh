@@ -9,7 +9,7 @@ SOURCE_REPO=../fuse-emulator-git/
 TMP_SPLIT_REPO=tmp-fuse-split
 TMP_PUSH_REPO=tmp-fuse-push
 TMP_REPARENT_REPO=tmp-fuse-reparent
-FUSE_REPO=fuse
+FUSE_REPO=fuse.git
 
 # Split prefix and push to branch
 split_branch() {
