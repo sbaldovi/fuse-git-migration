@@ -133,6 +133,9 @@ print * Manual author attributions
 # r5699 - Add support for reading zip files (patch #343) (Patrik Rak and Sergio).
 <2016-07-22T10:49:11Z> filter --regex /.*/Sergio Baldoví <serbalgi@gmail.com>/a
 
+# r5778 - Integrate initial Recreated ZX Spectrum patch.
+<2016-08-23T19:29:34Z> filter --regex /.*/Ekkehard Morgenstern <ekkehard@ekkehardmorgenstern.de>/a
+
 
 # Generic attributions
 # ====================

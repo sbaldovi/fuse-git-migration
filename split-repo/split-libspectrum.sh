@@ -74,6 +74,7 @@ split_branch 2014-09-07-ulaplus
 #split_branch 2016-04-25-didaktik
 #split_branch feature-100-remote-debugger
 split_branch patches-356-threadsafe-libspectrum
+#split_branch patch-358-recreated-zxspectrum
 #split_branch patches-377-more-startup-manager
 cd ..
 rm -rf $TMP_SPLIT_REPO
@@ -90,6 +91,7 @@ git checkout 2014-09-07-ulaplus
 git checkout feature-53-zip-support
 #git checkout feature-100-remote-debugger
 git checkout patches-356-threadsafe-libspectrum
+#git checkout patch-358-recreated-zxspectrum
 #git checkout patches-377-more-startup-manager
 git remote remove origin
 
