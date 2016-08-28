@@ -3,6 +3,9 @@
 # Traslate ticket numbers for SourceForge's project fuse-emulator from the old
 # bug tracking system to Allura
 
+#   svn log | grep -o -E "#[0-9][0-9][0-9][0-9]+" | sort | uniq | \
+#       xargs -I{} ticket2allura.sh {} >> tickets_map.txt
+
 AID_BUG=596648
 AID_PATCH=596650
 AID_FEATURE=596651
