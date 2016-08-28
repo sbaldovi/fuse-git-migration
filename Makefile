@@ -27,7 +27,7 @@
 # to check your work.
 #
 
-EXTRAS = README ticket2allura.sh tickets_replace.sh tickets_map.txt
+EXTRAS = README.md ticket2allura.sh tickets_replace.sh tickets_map.txt
 REMOTE_URL = https://svn.code.sf.net/p/fuse-emulator/code/
 VERBOSITY = "verbose 1"
 
