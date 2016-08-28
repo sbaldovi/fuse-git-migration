@@ -152,7 +152,7 @@ branch unlabeled-1.1.6 delete
 # libspectrum_0_1_0pre1-crypto-branch/libspectrum/libspectrum.c
 <15>..<788> expunge libspectrum/snapshot.c
 branch unlabeled-1.34.2 delete
-<789> split in libspectrum/Makefile.am
+<789> split by libspectrum/Makefile.am
 <2002-11-21T21:19:40Z#1> remove M libspectrum/libspectrum.c to <2002-11-21T21:19:40Z#2>
 <2002-11-21T21:19:40Z#1> remove M libspectrum/snapshot.c to <2002-11-21T21:19:40Z#2>
 <2002-11-21T21:19:40Z#1> add C libspectrum/libspectrum.c libspectrum/snapshot.c
@@ -175,7 +175,7 @@ branch unlabeled-1.5.2 delete
 
 <15>..<575> expunge libspectrum/libspectrum.h.in
 <576> remove D libspectrum/libspectrum.h
-<576> split in libspectrum/libspectrum.h.in
+<576> split by libspectrum/libspectrum.h.in
 <2002-08-19T14:04:25Z#1> add R libspectrum/libspectrum.h libspectrum/libspectrum.h.in
 
 <331>..<568> expunge libspectrum/rzx.c
@@ -197,7 +197,7 @@ branch unlabeled-1.37.2 delete
 #  Release-0_5_2pre1-scaler-branch was merged in r1085
 <1084>..<1085> merge
 
-<1104> split in fuse/ui/scaler/scaler.c
+<1104> split by fuse/ui/scaler/scaler.c
 <2003-03-19T17:37:40Z#1> remove M fuse/ui/scaler/scaler_internals.h to <2003-03-19T17:37:40Z#2>
 <2003-03-19T17:37:40Z#1> remove M fuse/ui/scaler/scalers.c to <2003-03-19T17:37:40Z#2>
 <2003-03-19T17:37:40Z#1> add C fuse/ui/scaler/scaler.c fuse/ui/scaler/scalers.c
@@ -433,7 +433,7 @@ print * Typos
 # Fix file moves
 print * Clean cvs history: z80.pl creation
 <2>..<1321> expunge fuse/z80/z80.pl
-<1322> split in fuse/z80/.gitignore
+<1322> split by fuse/z80/.gitignore
 <2003-05-24T12:41:10Z#1> remove M fuse/z80/Makefile.am to <2003-05-24T12:41:10Z#2>
 <2003-05-24T12:41:10Z#1> remove M fuse/z80/opcodes_base.dat to <2003-05-24T12:41:10Z#2>
 <2003-05-24T12:41:10Z#1> remove M fuse/z80/z80.pl to <2003-05-24T12:41:10Z#2>
@@ -496,13 +496,13 @@ print * Clean cvs history: widget UI moves 2
 <80> add R fuse/widget.h fuse/widget/widget.h
 
 <45>..<841> expunge fuse/widget/widget_internals.h
-<842> split in fuse/widget/widget_internals.h
+<842> split by fuse/widget/widget_internals.h
 <2002-12-03T23:29:06Z#1> remove M fuse/widget/widget.h to <2002-12-03T23:29:06Z#2>
 <2002-12-03T23:29:06Z#1> add C fuse/widget/widget.h fuse/widget/widget_internals.h
 
 <82>..<282> expunge fuse/widget/general.c
 <283> remove D fuse/widget/options.c
-<283> split in fuse/widget/general.c
+<283> split by fuse/widget/general.c
 <2002-01-15T14:59:24Z#1> add R fuse/widget/options.c fuse/widget/general.c
 
 <219>..<282> expunge fuse/widget/file.c
@@ -641,7 +641,7 @@ print * Clean cvs history: getopt moves
 <815>..<1419> expunge fuse/compat/getopt.c
 <815>..<1419> expunge fuse/compat/getopt.h
 <815>..<1419> expunge fuse/compat/getopt1.c
-<1420> split in fuse/compat/
+<1420> split by fuse/compat/
 <2003-06-21T15:18:10Z#1> remove fuse/getopt/getopt.c
 <2003-06-21T15:18:10Z#1> remove fuse/getopt/getopt.h
 <2003-06-21T15:18:10Z#1> add R fuse/getopt/getopt.c fuse/compat/getopt.c
@@ -651,18 +651,18 @@ print * Clean cvs history: getopt moves
 print * Clean cvs history: options moves
 <365>..<366> expunge fuse/ui/options.dat
 <367> remove D fuse/ui/gtk/options.dat
-<367> split in fuse/ui/options.dat
+<367> split by fuse/ui/options.dat
 <2002-02-26T01:22:38Z#1> add R fuse/ui/gtk/options.dat fuse/ui/options.dat
 
 print * Clean cvs history: settings moves
 <30>..<683> expunge fuse/settings.pl
 <684> remove deletes
-<684> split in fuse/settings.pl
+<684> split by fuse/settings.pl
 <2002-09-24T14:38:57Z#1> add R fuse/settings.c fuse/settings.pl
 
 <30>..<690> expunge fuse/settings-header.pl
 <691> remove deletes
-<691> split in fuse/settings-header.pl
+<691> split by fuse/settings-header.pl
 <2002-09-25T15:53:24Z#1> add R fuse/settings.h fuse/settings-header.pl
 
 print * Clean cvs history: font rename
@@ -679,7 +679,7 @@ print * Clean cvs history: fuse-utils moves
 <121>..<686> expunge fuse-utils/tzxconv.c
 <486>..<503> expunge fuse/utils/rzxdump.c
 <504> remove D fuse/utils/rzx2dump.c
-<504> split in fuse/utils/rzxdump.c
+<504> split by fuse/utils/rzxdump.c
 <2002-08-04T14:38:02Z#1> add R fuse/utils/rzx2dump.c fuse/utils/rzxdump.c
 
 <532>,<537> expunge fuse-utils/rzx-extract.c
@@ -714,7 +714,7 @@ print * Clean cvs history: fuse-utils moves
 <592>..<955> expunge fuse-utils/man/tapeconv.1
 <956> remove D fuse-utils/tzxconv.c
 <956> remove D fuse-utils/man/tzxconv.1
-<956> split in fuse-utils/tapeconv.c
+<956> split by fuse-utils/tapeconv.c
 <2003-01-05T13:26:02Z#1> remove fuse-utils/man/tapeconv.1 to <2003-01-05T13:26:02Z#2>
 <2003-01-05T13:26:02Z#1> add R fuse-utils/tzxconv.c fuse-utils/tapeconv.c
 <2003-01-05T13:26:02Z#1> add R fuse-utils/man/tzxconv.1 fuse-utils/man/tapeconv.1
@@ -725,7 +725,7 @@ print * Clean cvs history: fuse-utils moves
 print * Clean cvs history: libspectrum moves
 <575>..<1278> expunge libspectrum/make-perl.c
 <1279> remove D libspectrum/make-sed.c
-<1279> split in libspectrum/make-perl.c
+<1279> split by libspectrum/make-perl.c
 <2003-05-03T19:36:16Z#1> add R libspectrum/make-sed.c libspectrum/make-perl.c
 
 <48>..<568> expunge libspectrum/.gitignore
@@ -745,7 +745,7 @@ print * Clean cvs history: libspectrum moves
 <113>..<245> expunge libspectrum/tzx.c
 <113>..<245> expunge fuse/libspectrum/tzx_read.c
 <113>..<245> expunge fuse/libspectrum/tzx_write.c
-<246> split in fuse/libspectrum/tzx.c
+<246> split by fuse/libspectrum/tzx.c
 <2002-01-08T12:30:57Z#1> remove M fuse/libspectrum/tzx_read.c to <2002-01-08T12:30:57Z#2>
 <2002-01-08T12:30:57Z#1> remove M fuse/libspectrum/tzx_write.c to <2002-01-08T12:30:57Z#2>
 <2002-01-08T12:30:57Z#1> add C fuse/libspectrum/tzx.c fuse/libspectrum/tzx_read.c
