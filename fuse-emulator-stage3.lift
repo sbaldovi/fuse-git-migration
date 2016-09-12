@@ -168,6 +168,7 @@ do cleanup_comitter "Phil"            "Philip"
 do cleanup_comitter "Philip\sKendall" "Philip"
 do cleanup_comitter "Sergio"          "Sergio"
 do cleanup_comitter "Stuart"          "Stuart"
+do cleanup_comitter "Stuart\sBrady"   "Stuart"
 
 # Macro for assigning different author
 # {0}: string between brackets
