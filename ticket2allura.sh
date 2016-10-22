@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Traslate ticket numbers for SourceForge's project fuse-emulator from the old
-# bug tracking system to Allura
+# bug tracking system (Trac) to Allura.
+#
+# Note that SourceForge redirection was still available in 2015. This might
+# change in the future.
 
 #   svn log | grep -o -E "#[0-9][0-9][0-9][0-9]+" | sort | uniq | \
 #       xargs -I{} ticket2allura.sh {} >> tickets_map.txt
@@ -22,7 +25,7 @@ get_ticket() {
 }
 
 if test -z "$1"; then
-  echo "usage: artifact2ticket.sh <artifact number>"
+  echo "usage: ticket2allura.sh <artifact number>"
   exit 2
 fi
 
