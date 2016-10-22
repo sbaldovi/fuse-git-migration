@@ -421,6 +421,7 @@ print * Typos
 <5644> filter --replace /Ad/Add/c
 <5711> filter --replace /suport/support/c
 <5739> filter --replace /1.2.1/1.2.2/c
+<5739> filter --replace /Spectrrum/Spectrum/c
 /compatability/c filter --replace /compatability/compatibility/c
 
 # Fix names
