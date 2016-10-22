@@ -31,7 +31,7 @@ try:
 except ImportError:
     hglib = None
 
-version="3.38"
+version=3.40
 
 #
 # This code is intended to be hackable to support for special-purpose or
@@ -822,9 +822,10 @@ class Extractor(object):
     def color_branches(self, baton):
         "Color all commits with their branch name."
         color_items = self._branch_color_items()
-        if color_items:
-            # If the repo will give us a complete list of (commit hash, branch name) pairs,
-            # use that to do the coloring (this will be the case for git)
+        if color_items is not None:
+            # If the repo will give us a complete list of (commit
+            # hash, branch name) pairs, use that to do the coloring
+            # (this will be the case for git)
             for h, color in color_items:
                 self.meta[h]['branch'] = color
         else:
@@ -4066,14 +4067,6 @@ class StreamParser:
             copynode.from_set.copy_from(copynode.from_path,
                                         filemaps[copynode.from_rev],
                                         copynode.from_path)
-            # Sanity check: if the directory node has no from set, but
-            # there are files underneath it, this means the directory
-            # structure implied by the filemaps is not consistent with
-            # what's in the parsed Subversion nodes.  This should never
-            # happen.
-            if not copynode.from_set and \
-                    any(filemaps[copynode.revision].ls_R(node.path)):
-                self.gripe("inconsistently empty from set for %s" % copynode)
             baton.twirl()
         self.repo.timings.append(["copysets", time.time()])
         baton.twirl()
@@ -10669,9 +10662,11 @@ union repo will be selected.
 
 The root of each repo (other than the oldest repo) will be grafted as
 a child to the last commit in the dump with a preceding commit date.
-Running last to first, duplicate names will be disambiguated using the
-source repository name (thus, recent duplicates will get priority over
-older ones). After all grafts, marks will be renumbered.
+This will produce a union repository with one branch for each part.
+Running last to first, tag and branch duplicate names will be
+disambiguated using the source repository name (thus, recent
+duplicates will get priority over older ones). After all grafts, marks
+will be renumbered.
 
 The name of the new repo will be the names of all parts concatenated,
 separated by '+'. It will have no source directory or preferred system
@@ -11779,8 +11774,8 @@ to re-set it.
     def help_branchify_map(self):
         sys.stdout.write("""
 Specify the list of regular expressions used for mapping the svn branches that
-are detected by branchify. If non of the expressions match the default behaviour
-applies. Which maps a branch to the name of the last directory, except for trunk
+are detected by branchify. If none of the expressions match, the default behavior
+applies. This maps a branch to the name of the last directory, except for trunk
 and '*' which are mapped to master and root.
 
 With no arguments the current regex replacement pairs are shown. Passing 'reset'
@@ -12017,7 +12012,7 @@ means the surgical language is not backwards compatible).
 """)
     def do_version(self, line):
         if not line:
-            announce("reposurgeon " + version + " supporting " + " ".join(x.name for x in (vcstypes+extractors)))
+            announce("reposurgeon " + str(version) + " supporting " + " ".join(x.name for x in (vcstypes+extractors)))
         else:
             (vmajor, _) = version.split(".")
             if '.' in line:
